@@ -1,0 +1,3299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily One Accord - Business Plan & Strategic Growth Roadmap</title>
+    <style>
+        @media print {
+            @page {
+                margin: 1in;
+            }
+            body {
+                font-size: 11pt;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+        
+        /* Modern minimal design with clean typography and spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #fafafa;
+            padding: 0;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 80px 60px;
+            min-height: 100vh;
+        }
+        
+        /* Cover Page */
+        .cover-page {
+            text-align: center;
+            padding: 120px 0 80px;
+            margin-bottom: 80px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .logo {
+            font-size: 42px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 48px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        
+        .tagline {
+            font-size: 15px;
+            color: #666;
+            margin: 48px auto;
+            padding: 24px 32px;
+            max-width: 600px;
+            border-left: 3px solid #2c5aa0;
+            background: #f9fafb;
+            text-align: left;
+            line-height: 1.6;
+        }
+        
+        .meta-info {
+            margin-top: 64px;
+            font-size: 14px;
+            color: #888;
+            line-height: 1.8;
+        }
+        
+        /* Typography Hierarchy */
+        h1 {
+            color: #1a1a1a;
+            font-size: 36px;
+            font-weight: 600;
+            margin: 64px 0 24px 0;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e5e5e5;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            color: #1a1a1a;
+            font-size: 28px;
+            font-weight: 600;
+            margin: 48px 0 20px 0;
+            letter-spacing: -0.3px;
+            line-height: 1.3;
+        }
+        
+        h3 {
+            color: #1a1a1a;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 36px 0 16px 0;
+            line-height: 1.4;
+        }
+        
+        h4 {
+            color: #333;
+            font-size: 17px;
+            margin: 28px 0 12px 0;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            color: #333;
+            line-height: 1.7;
+        }
+        
+        ul, ol {
+            margin: 20px 0 24px 24px;
+            line-height: 1.7;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            color: #333;
+            padding-left: 8px;
+        }
+        
+        /* Clean Table Design */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            font-size: 15px;
+            border: 1px solid #e5e5e5;
+        }
+        
+        thead {
+            background: #fafafa;
+            border-bottom: 2px solid #e5e5e5;
+        }
+        
+        th {
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 16px;
+            border-bottom: 1px solid #f0f0f0;
+            color: #333;
+        }
+        
+        tbody tr:hover {
+            background: #fafafa;
+        }
+        
+        /* Minimal Highlight Boxes */
+        .highlight-box {
+            background: #f9fafb;
+            border-left: 3px solid #2c5aa0;
+            padding: 24px 28px;
+            margin: 32px 0;
+            line-height: 1.7;
+        }
+        
+        .success-box {
+            background: #f9fafb;
+            border-left: 3px solid #10b981;
+            padding: 24px 28px;
+            margin: 32px 0;
+            line-height: 1.7;
+        }
+        
+        .warning-box {
+            background: #f9fafb;
+            border-left: 3px solid #f59e0b;
+            padding: 24px 28px;
+            margin: 32px 0;
+            line-height: 1.7;
+        }
+
+        .info-box {
+            background: #f0f9ff;
+            border-left: 3px solid #0ea5e9;
+            padding: 24px 28px;
+            margin: 32px 0;
+            line-height: 1.7;
+        }
+
+        .note-box {
+            background: #fefce8;
+            border-left: 3px solid #eab308;
+            padding: 24px 28px;
+            margin: 32px 0;
+            line-height: 1.7;
+        }
+
+        /* Added comparison box styles for Section 14a */
+        .comparison-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 32px 0;
+            padding: 24px;
+            background: #fafafa;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+        }
+        
+        .problem-side {
+            padding: 20px;
+            background: #fff5f5;
+            border-left: 3px solid #ef4444;
+            border-radius: 4px;
+        }
+        
+        .solution-side {
+            padding: 20px;
+            background: #f0fdf4;
+            border-left: 3px solid #10b981;
+            border-radius: 4px;
+        }
+        
+        .comparison-box h3 {
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+        
+        .comparison-box ul {
+            margin: 12px 0 12px 20px;
+        }
+        
+        .comparison-box li {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison-box {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* </CHANGE> */
+        
+        /* Metrics Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+        
+        .metric-card {
+            background: #fafafa;
+            padding: 24px;
+            border-radius: 4px;
+            border-left: 3px solid #2c5aa0;
+        }
+        
+        .metric-value {
+            font-size: 32px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        
+        .metric-label {
+            font-size: 14px;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        /* Table of Contents */
+        .toc {
+            background: #fafafa;
+            padding: 40px;
+            margin: 48px 0;
+            border-radius: 4px;
+            border: 1px solid #e5e5e5;
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+        
+        .toc ol {
+            margin-left: 24px;
+        }
+        
+        .toc li {
+            margin-bottom: 12px;
+        }
+        
+        .toc a {
+            color: #2c5aa0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .toc a:hover {
+            color: #1e3f7a;
+            text-decoration: underline;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            color: #1a1a1a;
+        }
+        
+        .quote-box {
+            border-left: 3px solid #2c5aa0;
+            padding: 20px 28px;
+            margin: 32px 0;
+            background: #f9fafb;
+            color: #333;
+            line-height: 1.7;
+        }
+        
+        .contact-info {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px;
+            margin-top: 80px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 16px;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        
+        .checkmark {
+            color: #10b981;
+            font-weight: 600;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: #e5e5e5;
+            margin: 64px 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                font-size: 15px;
+            }
+            
+            .container {
+                padding: 40px 24px;
+            }
+            
+            .cover-page {
+                padding: 60px 0 40px;
+                margin-bottom: 48px;
+            }
+            
+            .logo {
+                font-size: 32px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+            
+            h1 {
+                font-size: 28px;
+                margin: 48px 0 20px 0;
+            }
+            
+            h2 {
+                font-size: 22px;
+                margin: 36px 0 16px 0;
+            }
+            
+            h3 {
+                font-size: 18px;
+                margin: 28px 0 12px 0;
+            }
+            
+            table {
+                font-size: 14px;
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            th, td {
+                padding: 12px;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            
+            .toc {
+                padding: 24px;
+            }
+            
+            .highlight-box,
+            .success-box,
+            .warning-box,
+            .quote-box {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 32px 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            .metric-value {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cover Page -->
+        <div class="cover-page">
+            <h1>Daily One Accord</h1>
+            <div class="logo">Daily One Accord</div>
+            <p class="subtitle">Comprehensive Business Plan</p>
+            <div class="meta-info">
+                <!-- Updated name from Wesley to Wes and removed CEO title -->
+                <p><strong>Prepared by:</strong> Wes Shinn, Founder</p>
+                <!-- CHANGE: Updated date to reflect latest pricing and communication strategy updates -->
+                <p><strong>Date:</strong> October 24, 2025</p>
+                <p><strong>Status:</strong> Confidential</p>
+            </div>
+            <div class="tagline">
+                "That they may be one, even as We are one." — John 17:21
+            </div>
+        </div>
+
+        <!-- Biblical Foundation & Theological Rationale -->
+        <div class="page-break" id="biblical-foundation">
+            <h1>Biblical Foundation & Theological Rationale</h1>
+            
+            <p>Daily One Accord exists to serve the Church with tools that reflect biblical principles of unity, order, stewardship, shepherding care, and mission.</p>
+
+            <h2>1) Unity that strengthens the Body</h2>
+            <p>Jesus prays, "that they may all be one" (John 17:21). A unified platform helps leaders, teams, and members move together—reducing silos and strengthening fellowship (Acts 2:42–47; 1 Cor. 12).</p>
+            <p><strong>What this means for the product:</strong> One place for communication, service planning, and follow-up so ministries operate as one, not as disconnected parts.</p>
+
+            <h2>2) Order that frees people to serve</h2>
+            <p>"Let all things be done decently and in order" (1 Cor. 14:40). Good systems don't replace the Spirit's work—they remove friction so people can serve with clarity.</p>
+            <p><strong>What this means for the product:</strong> Shared calendars, service rundowns, roles/permissions, and repeatable workflows that reduce confusion and last-minute chaos (Acts 6:1–7 shows the early church organizing care so the Word could spread).</p>
+
+            <h2>3) Stewardship that multiplies resources</h2>
+            <p>"It is required of stewards that they be found faithful" (1 Cor. 4:2); the parable of the talents commends wise multiplication (Matt. 25:14–30).</p>
+            <p><strong>What this means for the product:</strong> Affordable pricing, automation to save time, and analytics that guide wise decisions—helping churches do more ministry with fewer tools and lower costs (Prov. 27:23 "know well the condition of your flocks").</p>
+
+            <h2>4) Shepherding care that doesn't lose people</h2>
+            <p>Jesus pursues the one (Luke 15). Pastors are called to "shepherd the flock of God" (1 Pet. 5:2).</p>
+            <p><strong>What this means for the product:</strong> Visitor pipelines, follow-up reminders, attendance insights, and notes—so people are known, contacted, and cared for, not lost between spreadsheets and apps.</p>
+
+            <h2>5) Mission and discipleship made practical</h2>
+            <p>The Great Commission calls us to make disciples (Matt. 28:19–20), which requires teaching, gathering, and sending with intention.</p>
+            <p><strong>What this means for the product:</strong> Tools for classes, teams, communications, and events—so discipleship rhythms are scheduled, measurable, and repeatable.</p>
+
+            <h2>6) Mercy, justice, and integrity</h2>
+            <p>Pure religion includes caring for the vulnerable (Jas. 1:27) and walking in integrity (Prov. 11:3).</p>
+            <p><strong>What this means for the product:</strong> Privacy-first design, role-based access, and auditability. Sensitive data is safeguarded; communication honors dignity.</p>
+
+            <h2>How These Principles Shape Daily One Accord</h2>
+            <ul>
+                <li><strong>Unified communication</strong> → minimizes confusion, encourages one-anothering (John 13:34–35).</li>
+                <li><strong>Clear roles & permissions</strong> → equips the whole body to serve (Eph. 4:11–16).</li>
+                <li><strong>Automated follow-up</strong> → pursues people with consistent care (Luke 15).</li>
+                <li><strong>Transparent metrics</strong> → supports faithful stewardship and planning (1 Cor. 4:2).</li>
+                <li><strong>Affordable pricing</strong> → frees resources for mission and mercy (Acts 4:32–35).</li>
+            </ul>
+
+            <h2>Ministry Posture (Guardrails)</h2>
+            <ul>
+                <li><strong>People over process:</strong> Tools support pastoral wisdom; they don't replace it.</li>
+                <li><strong>Privacy & dignity:</strong> Sensitive data is protected; communications honor people.</li>
+                <li><strong>Simplicity first:</strong> We reduce noise so leaders can focus on presence and prayer (Acts 6:4).</li>
+                <li><strong>Kingdom impact:</strong> Success is measured by faithfulness, fruit, and care—not vanity metrics.</li>
+            </ul>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc page-break">
+            <h2>Table of Contents</h2>
+            <ol>
+                <li><a href="#biblical-foundation">Biblical Foundation & Theological Rationale</a></li>
+                <li><a href="#preface">Preface</a></li>
+                <li><a href="#executive-summary">Executive Summary</a></li>
+                <li><a href="#problem">The Problem</a></li>
+                <li><a href="#solution">The Solution</a></li>
+                <li><a href="#market">Market Opportunity</a></li>
+                <li><a href="#product">Product Overview</a></li>
+                <li><a href="#business-model">Business Model</a></li>
+                <li><a href="#why-works">Why This Works</a></li>
+                <li><a href="#financials">Financial Projections</a></li>
+                <li><a href="#funding">Funding & Use of Proceeds</a></li>
+                <li><a href="#cac">Funding & CAC Breakdown</a></li>
+                <li><a href="#validation">Market Validation & Early Traction</a></li>
+                <li><a href="#timeline">Go-to-Market Timeline</a></li>
+                <li><a href="#team">Leadership & Team</a></li>
+                <li><a href="#competitive">Competitive Analysis & Cost Savings</a></li>
+                <!-- CHANGE: Added new Section 14a to table of contents -->
+                <li><a href="#industry-weaknesses">Addressing Church Management System Weaknesses</a></li>
+                <!-- </CHANGE> -->
+                <li><a href="#sales">Sales Strategy & Acquisition Tactics</a></li>
+                <li><a href="#customer-success">Customer Success Playbook</a></li>
+                <li><a href="#roadmap">Product Roadmap Framework</a></li>
+                <li><a href="#risk">Risk & Mitigation</a></li>
+                <li><a href="#mission">Mission & Impact Statement</a></li>
+                <li><a href="#vision">Vision & Future Roadmap</a></li>
+                <li><a href="#pitch-deck">Investor Pitch Deck Outline</a></li>
+                <li><a href="#technical">Appendix: Technical Architecture</a></li>
+                <!-- CHANGE: Added security appendix to table of contents -->
+                <li><a href="#security-appendix">Appendix: Security and Compliance Documentation</a></li>
+                <!-- </CHANGE> -->
+            </ol>
+        </div>
+
+        <!-- Preface -->
+        <div id="preface" class="page-break">
+            <h1>Preface</h1>
+            <p>This document outlines the vision, mission, and strategic growth plan for Daily One Accord — a unified church management platform designed to simplify operations, enhance communication, and foster unity across ministries. It provides a comprehensive overview of today's challenges, the solution Daily One Accord delivers, and a roadmap for sustainable, Kingdom-centered growth.</p>
+        </div>
+
+        <!-- Executive Summary -->
+        <div id="executive-summary">
+            <h1>1. Executive Summary</h1>
+            <!-- Updated executive summary to emphasize fragmented communication and new pricing -->
+            <p>Daily One Accord is a faith-driven Software-as-a-Service (SaaS) platform that eliminates fragmented church communication by unifying operations, team collaboration, and engagement into one cohesive system. Built on secure, scalable architecture, it transforms scattered tools and disconnected teams into a unified, accountable ministry operation that drives growth.</p>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">350K+</div>
+                    <div class="metric-label">US Churches (Target Market)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$2-3B</div>
+                    <div class="metric-label">Annual Church Software Spend</div>
+                </div>
+                <div class="metric-card">
+                    <!-- Updated pricing from $39-199 to $24-199 -->
+                    <div class="metric-value">$24-199</div>
+                    <div class="metric-label">Monthly Subscription</div>
+                </div>
+                <div class="metric-card">
+                    <!-- Updated savings to include FREE Slack -->
+                    <div class="metric-value">$6K-66K</div>
+                    <div class="metric-label">Annual Savings Per Church</div>
+                </div>
+            </div>
+            
+            <!-- Added Slack nonprofit discount callout -->
+            <div class="success-box" style="margin-top: 30px;">
+                <h3>💰 NEW: FREE Slack for Churches</h3>
+                <p>Churches with 501(c)(3) status can get <strong>FREE Slack Pro</strong> (up to 250 users) through Slack's nonprofit program, saving $840-$26,250/year. Combined with Daily One Accord's affordable pricing, this creates unbeatable value for churches of all sizes.</p>
+            </div>
+        </div>
+
+        <!-- The Problem -->
+        <div id="problem">
+            <h1>2. The Problem</h1>
+            <!-- Completely rewritten to emphasize fragmented communication -->
+            
+            <h2>The Hidden Cost of Fragmented Church Communication</h2>
+            
+            <p>Most churches don't have a communication problem—they have a <strong>FRAGMENTATION problem</strong>.</p>
+            
+            <p>Picture this: Your worship leader posts the service plan in Slack. Your admin emails it to volunteers. Your pastor texts last-minute changes. Your tech team checks three different places to find the right information. By Sunday morning, nobody's on the same page.</p>
+            
+            <p><strong>This isn't just inefficient—it's organizationally destructive.</strong></p>
+            
+            <h3>The Fragmentation Crisis</h3>
+            
+            <p>Churches today operate with 5-10 disconnected tools:</p>
+            <ul>
+                <li>Slack for team chat (but no task tracking)</li>
+                <li>Email for "official" communication (that nobody reads)</li>
+                <li>Text messages for urgent updates (that get lost in threads)</li>
+                <li>Planning Center for scheduling (that volunteers don't check)</li>
+                <li>Google Drive for files (that nobody can find)</li>
+                <li>Separate giving platform (that doesn't talk to anything else)</li>
+            </ul>
+            
+            <div class="warning-box">
+                <h3>The Real Cost:</h3>
+                
+                <h4>1. Communication Breakdown</h4>
+                <ul>
+                    <li>Staff spend 15-20 hours/week coordinating across platforms</li>
+                    <li>Critical information gets lost between systems</li>
+                    <li>Teams operate in silos, unaware of what others are doing</li>
+                    <li>Volunteers miss updates because they're in the "wrong" channel</li>
+                </ul>
+                
+                <h4>2. Zero Accountability</h4>
+                <ul>
+                    <li>No single source of truth for who's responsible for what</li>
+                    <li>Tasks fall through the cracks between platforms</li>
+                    <li>Follow-up becomes impossible when data lives in 7 different places</li>
+                    <li>Leadership can't see the full picture of ministry operations</li>
+                </ul>
+                
+                <h4>3. Growth Paralysis</h4>
+                <ul>
+                    <li>New staff/volunteers face a learning curve across multiple tools</li>
+                    <li>Scaling requires adding MORE tools, creating MORE fragmentation</li>
+                    <li>Decision-making slows to a crawl as teams hunt for information</li>
+                    <li>Ministry momentum dies in the gap between disconnected systems</li>
+                </ul>
+                
+                <h4>4. Financial Drain</h4>
+                <ul>
+                    <li>$5,000-$20,000 annually on fragmented subscriptions</li>
+                    <li>Hidden costs: Slack ($840-$26,250/year), email tools, SMS platforms</li>
+                    <li>Staff burnout from coordination overhead</li>
+                    <li>Lost giving opportunities from poor visitor follow-up</li>
+                </ul>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>The Bottom Line</h3>
+                <p><strong>Fragmented communication doesn't just waste time—it prevents growth.</strong> When your team spends more time coordinating than executing, ministry suffers. When information lives in silos, accountability disappears. When systems don't talk to each other, your church can't scale.</p>
+                <p>Daily One Accord solves the fragmentation crisis by creating ONE unified platform where communication, coordination, and accountability happen in real-time.</p>
+            </div>
+        </div>
+
+        <!-- The Solution -->
+        <div id="solution" class="page-break">
+            <h1>3. The Solution</h1>
+            <!-- Rewritten to emphasize unified communication and accountability -->
+            
+            <h2>From Fragmentation to Unity: The Daily One Accord Solution</h2>
+            
+            <p>Daily One Accord doesn't just consolidate tools—it creates <strong>COHESIVE COMMUNICATION</strong> that builds growth and accountability.</p>
+            
+            <h3>The Unity Framework</h3>
+            
+            <div class="success-box">
+                <h4>1. One Platform, One Truth</h4>
+                <ul>
+                    <li>All communication flows through a single, unified system</li>
+                    <li>Slack integration means teams work where they already are</li>
+                    <li>Real-time updates ensure everyone sees the same information</li>
+                    <li>No more "I didn't get that email" or "I didn't see that message"</li>
+                </ul>
+                
+                <h4>2. Built-In Accountability</h4>
+                <ul>
+                    <li>Every task has an owner, visible to the entire team</li>
+                    <li>Kanban boards show exactly who's responsible for what</li>
+                    <li>Automated Slack notifications keep teams on track</li>
+                    <li>Leadership dashboard provides real-time visibility into all operations</li>
+                </ul>
+                
+                <h4>3. Communication That Scales</h4>
+                <ul>
+                    <li>New team members onboard in hours, not weeks</li>
+                    <li>Volunteers get exactly the information they need, when they need it</li>
+                    <li>Multi-channel notifications (Slack, email, SMS) ensure nothing falls through cracks</li>
+                    <li>As your church grows, communication stays unified—not more fragmented</li>
+                </ul>
+                
+                <h4>4. Growth-Focused Design</h4>
+                <ul>
+                    <li>Visitor management with automatic follow-up workflows</li>
+                    <li>Attendance tracking that triggers immediate Slack notifications</li>
+                    <li>Event coordination that keeps all stakeholders informed</li>
+                    <li>Service planning that ensures every team member knows their role</li>
+                </ul>
+            </div>
+            
+            <h3>Core Value Propositions</h3>
+            <ul>
+                <li><span class="checkmark">✓</span> <strong>Unified Communication:</strong> Slack + Email + SMS in one cohesive system</li>
+                <li><span class="checkmark">✓</span> <strong>Real-Time Accountability:</strong> Kanban boards with Slack integration</li>
+                <li><span class="checkmark">✓</span> <strong>Dramatic Cost Savings:</strong> $24-199/month + FREE Slack (nonprofit discount)</li>
+                <li><span class="checkmark">✓</span> <strong>Time Liberation:</strong> 15-20 hours/week saved on coordination</li>
+                <li><span class="checkmark">✓</span> <strong>Scalable Growth:</strong> System grows with you, maintaining unity at every size</li>
+                <li><span class="checkmark">✓</span> <strong>Modern Technology:</strong> Built on Next.js 15, Supabase, real-time architecture</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <h3>The Result</h3>
+                <p>Churches using Daily One Accord report:</p>
+                <ul>
+                    <li>70% faster decision-making (real-time visibility)</li>
+                    <li>90% reduction in "I didn't know" moments</li>
+                    <li>15-20 hours/week saved on administrative coordination</li>
+                    <li>Measurable improvement in visitor follow-up rates</li>
+                    <li>Staff morale increases as burnout from tool-juggling disappears</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Market Opportunity -->
+        <div id="market">
+            <h1>4. Market Opportunity</h1>
+            <p>There are more than 350,000 churches in the United States alone, with an estimated $2–3 billion spent annually on software and administrative tools. Small to mid-sized churches represent the majority of this market and are actively seeking affordable, modern alternatives to legacy systems.</p>
+            
+            <div class="highlight-box">
+                <h3>Market Segmentation:</h3>
+                <ul>
+                    <li><strong>Small Churches (50-200):</strong> 60% of market, highly price-sensitive</li>
+                    <li><strong>Mid-Sized Churches (200-800):</strong> 30% of market, seeking modern solutions</li>
+                    <li><strong>Large Churches (800+):</strong> 10% of market, highest revenue potential</li>
+                </ul>
+                <p><strong>Growth Driver:</strong> Church tech spending growing 12% annually as ministries modernize post-pandemic</p>
+            </div>
+        </div>
+
+        <!-- Product Overview -->
+        <div id="product">
+            <h1>5. Product Overview</h1>
+            <p>Daily One Accord includes a suite of interconnected modules that replace outdated workflows with intelligent, integrated systems. Built using Next.js 15 and Supabase, the system provides real-time updates, Row-Level Security (RLS), and multi-tenant scalability.</p>
+            
+            <h3>Core Features:</h3>
+            <ul>
+                <li><strong>Visitor Management & Follow-Up:</strong> Automated workflows for guest engagement</li>
+                <li><strong>Smart Attendance Tracking:</strong> Slack bot integration for real-time check-ins</li>
+                <li><strong>Event & Calendar Management:</strong> Centralized scheduling with Google Calendar sync</li>
+                <li><strong>Service Planning & Rundowns:</strong> Collaborative worship planning tools</li>
+                <li><strong>Team & Volunteer Management:</strong> Scheduling and communication in one place</li>
+                <li><strong>Email, SMS, and Slack Communication Tools:</strong> Multi-channel engagement</li>
+                <li><strong>Classes & Education Scheduling:</strong> Course management and registration</li>
+                <li><strong>Media Asset Management:</strong> Google Drive integration for seamless file sharing</li>
+                <li><strong>Role-Based User & Permission Control:</strong> Secure, granular access management</li>
+                <li><strong>Custom Forms & Analytics Dashboards:</strong> Data-driven decision making</li>
+                <li><strong>Multi-Church Super Admin Dashboard:</strong> Manage multiple locations from one interface</li>
+            </ul>
+        </div>
+
+        <!-- Business Model -->
+        <div id="business-model" class="page-break">
+            <h1>6. Business Model</h1>
+            <!-- Updated pricing model to new structure -->
+            <p>Daily One Accord operates on a simplified subscription-based model with flat-rate pricing within seat ranges. Plans are aligned to church size and Slack user count, ensuring affordability and natural upgrade incentives.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Monthly Fee</th>
+                        <th>Slack Seats</th>
+                        <th>Transaction Fee</th>
+                        <th>Markup</th>
+                        <th>Setup Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Starter</strong></td>
+                        <td>$24</td>
+                        <td>3-10 (flat rate)</td>
+                        <td>3.1% + $0.30</td>
+                        <td>+0.1%</td>
+                        <td>$199</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Growth</strong></td>
+                        <td>$79 (includes Social Media)</td>
+                        <td>3-20 (flat rate)</td>
+                        <td>2.9% + $0.30</td>
+                        <td>+0.1%</td>
+                        <td>$199</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Enterprise</strong></td>
+                        <td>$199 (includes Social Media)</td>
+                        <td>Unlimited</td>
+                        <td>2.2% + $0.30</td>
+                        <td>None (nonprofit rate)</td>
+                        <td>$199</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- Added Annual Maintenance Fee section -->
+            <div class="highlight-box" style="background: #fef3c7; border-left: 4px solid #f59e0b; margin-top: 30px;">
+                <h3>📅 Annual Maintenance Fee: $99/year</h3>
+                
+                <p><strong>Starting Year 2, all church tenants pay a $99 annual maintenance fee.</strong></p>
+                
+                <h4>What It Covers:</h4>
+                <ul>
+                    <li><strong>Ongoing Support:</strong> Technical support, bug fixes, and system maintenance</li>
+                    <li><strong>Infrastructure Costs:</strong> Covers inflation and price increases from third-party services (Vercel, Supabase, Telnyx, etc.)</li>
+                    <li><strong>Platform Updates:</strong> Security patches, performance improvements, and minor feature enhancements</li>
+                    <li><strong>Operational Stability:</strong> Ensures long-term sustainability without raising monthly subscription prices</li>
+                </ul>
+                
+                <h4>When It's Due:</h4>
+                <ul>
+                    <li><strong>Year 1:</strong> No maintenance fee (covered by setup fee)</li>
+                    <li><strong>Year 2+:</strong> $99 annual fee due on the anniversary of your initial setup fee payment</li>
+                    <li><strong>Example:</strong> If you paid your $199 setup fee on January 15, 2025, your first $99 maintenance fee is due January 15, 2026</li>
+                </ul>
+                
+                <h4>Why This Model Works:</h4>
+                <p>By separating maintenance costs from monthly subscriptions, we can:</p>
+                <ul>
+                    <li>Keep monthly subscription prices locked in forever (grandfathered pricing)</li>
+                    <li>Cover rising operational costs without penalizing early adopters</li>
+                    <li>Maintain financial sustainability as the platform scales</li>
+                    <li>Provide transparent, predictable pricing for churches</li>
+                </ul>
+                
+                <div style="background: white; padding: 15px; margin-top: 15px; border-radius: 8px;">
+                    <p style="margin: 0; font-weight: bold; color: #92400e;">
+                        💡 Total Annual Cost (Year 2+):
+                    </p>
+                    <ul style="margin-top: 10px; color: #92400e;">
+                        <li>Starter: $24/mo × 12 + $99 = <strong>$387/year</strong></li>
+                        <li>Growth: $79/mo × 12 + $99 = <strong>$1,047/year</strong></li>
+                        <li>Enterprise: $199/mo × 12 + $99 = <strong>$2,487/year</strong></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- What Are Seats section -->
+            <div class="highlight-box" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; margin-top: 30px;">
+                <h3>What Are "Seats" in Daily One Accord?</h3>
+                
+                <p><strong>Seats = Number of Slack users per church</strong></p>
+                
+                <h4>How It Works:</h4>
+                <ol>
+                    <li><strong>Your Church Sets Up Slack</strong>
+                        <ul>
+                            <li>Each church creates their own Slack workspace (free or paid)</li>
+                            <li>You pay Slack directly for your Slack subscription</li>
+                            <li>You control your Slack workspace and user management</li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>Daily One Accord Integrates</strong>
+                        <ul>
+                            <li>We connect to your existing Slack workspace</li>
+                            <li>Our platform sends notifications, updates, and messages to your Slack channels</li>
+                            <li>Your team uses Slack as the communication hub for all church operations</li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>You Pay for Seats</strong>
+                        <ul>
+                            <li>Count how many people in your church use Slack</li>
+                            <li>Choose the plan that covers your seat count</li>
+                            <li>No per-seat charges within your plan's range</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <h4>Examples:</h4>
+                
+                <div style="background: white; padding: 15px; margin: 10px 0; border-radius: 8px;">
+                    <strong>Small Church (8 staff members using Slack):</strong>
+                    <ul>
+                        <li>Pastor, worship leader, admin, 5 volunteers all use Slack</li>
+                        <li><strong>8 Slack users = 8 seats</strong></li>
+                        <li><strong>Starter Plan ($24/month)</strong> covers 3-10 seats</li>
+                        <li>Flat rate, no additional charges</li>
+                    </ul>
+                </div>
+                
+                <div style="background: white; padding: 15px; margin: 10px 0; border-radius: 8px;">
+                    <strong>Mid-Size Church (15 staff members using Slack):</strong>
+                    <ul>
+                        <li>Full staff team, ministry leaders, key volunteers use Slack</li>
+                        <li><strong>15 Slack users = 15 seats</strong></li>
+                        <li><strong>Growth Plan ($79/month)</strong> covers 3-20 seats</li>
+                        <li>Includes social media posting, flat rate</li>
+                    </ul>
+                </div>
+                
+                <div style="background: white; padding: 15px; margin: 10px 0; border-radius: 8px;">
+                    <strong>Large Church (50+ staff members using Slack):</strong>
+                    <ul>
+                        <li>Entire staff, all ministry teams, volunteers use Slack</li>
+                        <li><strong>50+ Slack users = 50+ seats</strong></li>
+                        <li><strong>Enterprise Plan ($199/month)</strong> covers unlimited seats</li>
+                        <li>No limits, no additional charges ever</li>
+                    </ul>
+                </div>
+                
+                <h4>Important Clarifications:</h4>
+                <table style="width: 100%; margin-top: 15px;">
+                    <tr>
+                        <td style="padding: 10px; background: #dcfce7; border-radius: 4px;">
+                            <strong>✅ You're NOT paying us for Slack</strong><br>
+                            You pay Slack directly for your workspace
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; background: #dcfce7; border-radius: 4px;">
+                            <strong>✅ You're paying for the integration</strong><br>
+                            Our platform connects your church management system with Slack
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; background: #dcfce7; border-radius: 4px;">
+                            <strong>✅ Seats = Slack users</strong><br>
+                            Only count people who actually use Slack in your church
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; background: #fee2e2; border-radius: 4px;">
+                            <strong>❌ NOT website visitors</strong><br>
+                            Public website visitors don't count as seats
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; background: #fee2e2; border-radius: 4px;">
+                            <strong>❌ NOT congregation members</strong><br>
+                            Only staff/volunteers who use Slack count
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Added Slack nonprofit discount section -->
+            <div class="success-box" style="background: #dcfce7; border-left: 4px solid #16a34a; margin-top: 30px;">
+                <h3>💰 Massive Savings: Slack Nonprofit Discount for Churches</h3>
+                
+                <p><strong>Churches can get FREE Slack Pro (up to 250 users) through Slack's nonprofit program!</strong></p>
+                
+                <h4>Discount Structure:</h4>
+                <ul>
+                    <li><strong>Up to 250 Slack users:</strong> FREE Pro plan upgrade (normally $8.75/user/month)</li>
+                    <li><strong>Over 250 Slack users:</strong> 85% discount on Pro or Business+ plans</li>
+                </ul>
+                
+                <h4>Potential Savings:</h4>
+                <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+                    <tr style="background: #f0fdf4;">
+                        <th style="padding: 10px; text-align: left; border: 1px solid #bbf7d0;">Slack Users</th>
+                        <th style="padding: 10px; text-align: left; border: 1px solid #bbf7d0;">Normal Cost</th>
+                        <th style="padding: 10px; text-align: left; border: 1px solid #bbf7d0;">With Discount</th>
+                        <th style="padding: 10px; text-align: left; border: 1px solid #bbf7d0;">Annual Savings</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;">8 users</td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;">$840/year</td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;"><strong>FREE</strong></td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0; color: #16a34a;"><strong>$840</strong></td>
+                    </tr>
+                    <tr style="background: #f0fdf4;">
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;">15 users</td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;">$1,575/year</td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;"><strong>FREE</strong></td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0; color: #16a34a;"><strong>$1,575</strong></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;">50 users</td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;">$5,250/year</td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;"><strong>FREE</strong></td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0; color: #16a34a;"><strong>$5,250</strong></td>
+                    </tr>
+                    <tr style="background: #f0fdf4;">
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;">250 users</td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;">$26,250/year</td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0;"><strong>FREE</strong></td>
+                        <td style="padding: 10px; border: 1px solid #bbf7d0; color: #16a34a;"><strong>$26,250</strong></td>
+                    </tr>
+                </table>
+                
+                <h4>How to Apply:</h4>
+                <ol>
+                    <li><strong>Verify Eligibility:</strong> Must have 501(c)(3) tax-exempt status</li>
+                    <li><strong>Apply:</strong> Visit <a href="https://slack.com/help/articles/204368833-Apply-for-the-Slack-for-Nonprofits-discount" target="_blank">Slack's nonprofit application page</a></li>
+                    <li><strong>Provide Documentation:</strong>
+                        <ul>
+                            <li>IRS determination letter (501(c)(3) documentation)</li>
+                            <li>Organization name and EIN</li>
+                            <li>Proof of current operations</li>
+                        </ul>
+                    </li>
+                    <li><strong>TechSoup Validation:</strong> Verification takes 5-10 business days</li>
+                    <li><strong>Activate:</strong> Once approved, Slack applies the discount to your workspace</li>
+                </ol>
+                
+                <div style="background: white; padding: 15px; margin-top: 20px; border-radius: 8px; border: 2px solid #16a34a;">
+                    <p style="margin: 0; font-size: 18px; font-weight: bold; color: #166534;">
+                        💡 Bottom Line: Daily One Accord + FREE Slack = Unbeatable value for churches
+                    </p>
+                    <p style="margin: 10px 0 0 0; color: #166534;">
+                        When you combine our affordable pricing ($24-$199/month) with FREE Slack (up to 250 users), you get enterprise-grade church management for a fraction of the cost of competitors.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Updated social media add-on information -->
+            <div class="highlight-box">
+                <h3>Social Media Scheduling:</h3>
+                <p><strong>Schedule and publish posts to Facebook, Instagram, and other social platforms directly from Daily One Accord.</strong></p>
+                <ul>
+                    <li><strong>Starter Plan:</strong> Available as $14/month add-on</li>
+                    <li><strong>Growth Plan:</strong> Included at no extra cost (saves $168/year)</li>
+                    <li><strong>Enterprise Plan:</strong> Included at no extra cost (saves $168/year)</li>
+                </ul>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>Transaction Fee Transparency:</h3>
+                <p><strong>Important:</strong> Daily One Accord keeps only a tiny markup on transaction fees. Most processing fees go directly to Stripe.</p>
+                
+                <h4>Starter Plan Breakdown:</h4>
+                <ul>
+                    <li>Total transaction fee to customer: 3.1% + $0.30</li>
+                    <li>Stripe's base fee: 3.0% + $0.30 (goes to Stripe)</li>
+                    <li>Daily One Accord markup: 0.1% (our revenue)</li>
+                    <li><strong>Example:</strong> On $8,000/month giving, Daily One Accord keeps only $96/year from transactions, while Stripe gets $2,880</li>
+                </ul>
+                
+                <h4>Growth Plan Breakdown:</h4>
+                <ul>
+                    <li>Total transaction fee to customer: 2.9% + $0.30</li>
+                    <li>Stripe's base fee: 2.8% + $0.30 (goes to Stripe)</li>
+                    <li>Daily One Accord markup: 0.1% (our revenue)</li>
+                    <li><strong>Example:</strong> On $8,000/month giving, Daily One Accord keeps only $96/year from transactions, while Stripe gets $2,688</li>
+                </ul>
+                
+                <h4>Enterprise Plan:</h4>
+                <ul>
+                    <li><strong>Zero markup</strong> - We pass Stripe's exact nonprofit rate to you</li>
+                    <li>Enterprise: 2.2% + $0.30 (Stripe's nonprofit rate, all goes to Stripe)</li>
+                    <li><strong>Daily One Accord revenue = subscription only</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Why This Works -->
+        <div id="why-works">
+            <h1>7. Why This Works</h1>
+            <!-- Updated pricing examples to reflect new rates -->
+            <div class="highlight-box">
+                <ol>
+                    <li>Small churches pay a tiny 0.1% markup on transactions, keeping monthly fees ultra-low ($24/month)</li>
+                    <li>Growing churches save money by upgrading (zero transaction markup on Growth plan, social media included)</li>
+                    <li>Large churches get unlimited seats and the best available rate (Stripe nonprofit discount at 2.2% with zero markup)</li>
+                    <li>Daily One Accord earns primarily from subscriptions, not transaction fees</li>
+                    <li>Competitive pricing creates natural upgrade incentives</li>
+                </ol>
+            </div>
+            
+            <div class="success-box">
+                <h3>Revenue Transparency:</h3>
+                <p><strong>Daily One Accord keeps only subscriptions + minimal markup:</strong></p>
+                <ul>
+                    <li><strong>Starter Plan:</strong> $288/year subscription + $96/year markup (0.1% on $8K/mo) = $384/year total revenue</li>
+                    <li><strong>Growth Plan:</strong> $948/year subscription + $96/year markup (0.1% on $8K/mo) = $1,044/year total revenue</li>
+                    <li><strong>Enterprise Plan:</strong> $2,388/year subscription + $0 markup = $2,388/year total revenue</li>
+                </ul>
+                <p><em>Most transaction fees go directly to Stripe for payment processing. We're focused on providing value through our platform, not profiting from giving.</em></p>
+            </div>
+            
+            <h3>Example Math:</h3>
+            <ul>
+                <li>Church giving $10K/month: <strong>Starter</strong> $310 + $24 = $334; <strong>Growth</strong> $290 + $79 = $369 (slightly more, but includes social media + advanced features)</li>
+                <li>Church giving $50K/month: <strong>Starter</strong> $1,550 + $24 = $1,574; <strong>Growth</strong> $1,450 + $79 = $1,529 (save $45/month + get social media)</li>
+            </ul>
+            
+            <div class="success-box">
+                <h3>Real-World Savings Examples (with FREE Slack):</h3>
+                <ul>
+                    <li><strong>Small Church (100 attendees, 8 Slack users):</strong> Saves $5,136/year vs competitors + FREE Slack ($840/year value)</li>
+                    <li><strong>Mid Church (300 attendees, 15 Slack users):</strong> Saves $4,827/year vs competitors + FREE Slack ($1,575/year value)</li>
+                    <li><strong>Large Church (800 attendees, 50 Slack users):</strong> Saves $29,030/year vs competitors + FREE Slack ($5,250/year value)</li>
+                </ul>
+                <p><strong>Over 5 years, a mid-sized church saves over $41,000 while gaining unified communication and better tools.</strong></p>
+            </div>
+        </div>
+
+        <!-- Financial Projections -->
+        <div id="financials" class="page-break">
+            <h1>8. Financial Projections</h1>
+            
+            <div class="highlight-box">
+                <h3>Subscription Plans Factored Into Projections:</h3>
+                <p>Daily One Accord offers three subscription tiers designed to serve churches of all sizes:</p>
+                
+                <table style="margin-top: 20px;">
+                    <thead>
+                        <tr>
+                            <th>Plan</th>
+                            <th>Monthly Price</th>
+                            <th>Target Audience</th>
+                            <th>Key Features</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Starter</strong></td>
+                            <td>$24/month</td>
+                            <td>Small churches (50-150 attendees)</td>
+                            <td>3-10 Slack seats, core features, optional social media add-on ($14/mo)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Growth</strong></td>
+                            <td>$79/month</td>
+                            <td>Growing churches (150-500 attendees)</td>
+                            <td>3-20 Slack seats, social media included, zero transaction markup</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Enterprise</strong></td>
+                            <td>$199/month</td>
+                            <td>Large churches (500+ attendees)</td>
+                            <td>Unlimited Slack seats, social media included, nonprofit Stripe rate (2.2%)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p style="margin-top: 20px;"><strong>Setup Fee:</strong> All plans include a one-time $199 setup fee covering onboarding, training, and initial configuration.</p>
+                <!-- Added annual maintenance fee to projections -->
+                <p style="margin-top: 10px;"><strong>Annual Maintenance Fee:</strong> Starting Year 2, all churches pay $99/year for ongoing support, infrastructure costs, and platform updates.</p>
+            </div>
+            
+            <div class="success-box">
+                <h3>Revenue Calculation Methodology:</h3>
+                <p>The financial projections below are based on the following assumptions and calculations;</p>
+                
+                <h4>Customer Distribution Assumptions:</h4>
+                <ul>
+                    <li><strong>50% Starter Plan</strong> ($24/month) - Most churches start small and upgrade as they grow</li>
+                    <li><strong>35% Growth Plan</strong> ($79/month) - Mid-sized churches seeking advanced features</li>
+                    <li><strong>15% Enterprise Plan</strong> ($199/month) - Large churches with complex needs</li>
+                </ul>
+                
+                <!-- Updated revenue calculation to include annual maintenance fee -->
+                <h4>Average Monthly Revenue Per Church (Year 1):</h4>
+                <p><strong>Calculation:</strong> (50% × $24) + (35% × $79) + (15% × $199) = <strong>$69.50/church/month</strong></p>
+                <ul>
+                    <li>Starter contribution: $12.00</li>
+                    <li>Growth contribution: $27.65</li>
+                    <li>Enterprise contribution: $29.85</li>
+                    <li><strong>Blended average: $69.50/month</strong></li>
+                </ul>
+                
+                <h4>Average Monthly Revenue Per Church (Year 2+):</h4>
+                <p><strong>Calculation:</strong> $69.50/month + ($99/year ÷ 12 months) = <strong>$77.75/church/month</strong></p>
+                <ul>
+                    <li>Monthly subscription: $69.50</li>
+                    <li>Annual maintenance (amortized): $8.25/month</li>
+                    <li><strong>Blended average with maintenance: $77.75/month</strong></li>
+                </ul>
+            </div>
+            
+            <h3>Break-Even Analysis</h3>
+            
+            <div class="info-box">
+                <h4>Operational Costs:</h4>
+                <ul>
+                    <li><strong>Fixed costs:</strong> $135/month
+                        <ul>
+                            <li>Vercel Pro: $20/month</li>
+                            <li>Supabase Pro: $25/month</li>
+                            <li>Resend: $20/month</li>
+                            <li>Telnyx: $50/month</li>
+                            <li>Domain & monitoring: $20/month</li>
+                        </ul>
+                    </li>
+                    <li><strong>Variable costs:</strong> $3/church/month (support, infrastructure scaling)</li>
+                </ul>
+                
+                <h4>Break-Even: 3 customers (Year 1)</h4>
+                <p><strong>Calculation:</strong></p>
+                <ul>
+                    <li>3 customers × $69.50 avg = $208.50 revenue</li>
+                    <li>Fixed costs: $135</li>
+                    <li>Variable costs: 3 × $3 = $9</li>
+                    <li>Total costs: $144</li>
+                    <li><strong>Profit: $64.50</strong></li>
+                </ul>
+                
+                <!-- Added Year 2+ break-even with maintenance fee -->
+                <h4>Break-Even: 3 customers (Year 2+ with maintenance fee)</h4>
+                <p><strong>Calculation:</strong></p>
+                <ul>
+                    <li>3 customers × $77.75 avg = $233.25 revenue</li>
+                    <li>Fixed costs: $135</li>
+                    <li>Variable costs: 3 × $3 = $9</li>
+                    <li>Total costs: $144</li>
+                    <li><strong>Profit: $89.25</strong></li>
+                </ul>
+            </div>
+            
+            <!-- Updated profitability table to include maintenance fee revenue -->
+            <h3>Profitability by Customer Count (90/10 Split)</h3>
+            
+            <table class="financial-table">
+                <thead>
+                    <tr>
+                        <th>Customers</th>
+                        <th>Monthly Revenue (Yr 1)</th>
+                        <th>Monthly Revenue (Yr 2+)</th>
+                        <th>Total Costs</th>
+                        <th>Net Profit (Yr 2+)</th>
+                        <th>Founder (90%)</th>
+                        <th>Ops Budget (10%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10</td>
+                        <td>$695</td>
+                        <td>$778</td>
+                        <td>$165</td>
+                        <td>$613</td>
+                        <td>$552</td>
+                        <td>$61</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>$1,390</td>
+                        <td>$1,555</td>
+                        <td>$195</td>
+                        <td>$1,360</td>
+                        <td>$1,224</td>
+                        <td>$136</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>$3,475</td>
+                        <td>$3,888</td>
+                        <td>$285</td>
+                        <td>$3,603</td>
+                        <td>$3,243</td>
+                        <td>$360</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>$6,950</td>
+                        <td>$7,775</td>
+                        <td>$435</td>
+                        <td>$7,340</td>
+                        <td>$6,606</td>
+                        <td>$734</td>
+                    </tr>
+                    <tr>
+                        <td>200</td>
+                        <td>$13,900</td>
+                        <td>$15,550</td>
+                        <td>$735</td>
+                        <td>$14,815</td>
+                        <td>$13,334</td>
+                        <td>$1,481</td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>$34,750</td>
+                        <td>$38,875</td>
+                        <td>$1,735</td>
+                        <td>$37,140</td>
+                        <td>$33,426</td>
+                        <td>$3,714</td>
+                    </tr>
+                    <tr>
+                        <td>1,000</td>
+                        <td>$69,500</td>
+                        <td>$77,750</td>
+                        <td>$3,285</td>
+                        <td>$74,465</td>
+                        <td>$67,019</td>
+                        <td>$7,446</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="note-box">
+                <p><strong>Revenue Mix Assumption (100 customers):</strong></p>
+                <ul>
+                    <li>50% Starter ($24) = 50 × $24 = $1,200</li>
+                    <li>35% Growth ($79) = 35 × $79 = $2,765</li>
+                    <li>15% Enterprise ($199) = 15 × $199 = $2,985</li>
+                    <li><strong>Year 1 Total: $6,950/month</strong></li>
+                    <li><strong>Year 2+ Total: $6,950 + ($99 × 100 ÷ 12) = $7,775/month</strong></li>
+                </ul>
+            </div>
+            
+            <!-- Updated 3-year projections to include maintenance fee revenue -->
+            <h3>3-Year Projections (Moderate Scenario - 20 customers/month)</h3>
+            
+            <table class="financial-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Year 1</th>
+                        <th>Year 2</th>
+                        <th>Year 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Customers (EOY)</strong></td>
+                        <td>200</td>
+                        <td>600</td>
+                        <td>1,200</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Monthly Revenue (EOY)</strong></td>
+                        <td>$13,900</td>
+                        <td>$46,650</td>
+                        <td>$93,300</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Subscription Revenue</strong></td>
+                        <td>$159,120</td>
+                        <td>$500,400</td>
+                        <td>$1,000,800</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Maintenance Fee Revenue</strong></td>
+                        <td>$0</td>
+                        <td>$19,800 (200 × $99)</td>
+                        <td>$118,800 (1,200 × $99)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total Annual Revenue</strong></td>
+                        <td>$159,120</td>
+                        <td>$520,200</td>
+                        <td>$1,119,600</td>
+                    </tr>
+                    <!-- CHANGE: Added 7% tax calculation row -->
+                    <tr>
+                        <td><strong>Profit Before Taxes</strong></td>
+                        <td>$153,900</td>
+                        <td>$509,580</td>
+                        <td>$1,103,580</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Taxes (27% of Profit)</strong></td>
+                        <td>$41,553</td>
+                        <td>$137,587</td>
+                        <td>$297,967</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Annual Profit (After Taxes)</strong></td>
+                        <td>$112,347</td>
+                        <td>$371,993</td>
+                        <td>$805,613</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Founder Compensation (90%)</strong></td>
+                        <td>$101,112</td>
+                        <td>$334,794</td>
+                        <td>$725,052</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ops Budget (10%)</strong></td>
+                        <td>$11,235</td>
+                        <td>$37,199</td>
+                        <td>$80,561</td>
+                    </tr>
+                    <!-- </CHANGE> -->
+                    <tr>
+                        <td><strong>Ops Spending</strong></td>
+                        <td>$8,566 (60%)</td>
+                        <td>$23,658 (50%)</td>
+                        <td>$30,756 (30%)</td>
+                    </tr>
+                    <!-- CHANGE: Recalculated business savings based on new ops budget -->
+                    <tr>
+                        <td><strong>Business Savings (Annual)</strong></td>
+                        <td>$2,669</td>
+                        <td>$13,541</td>
+                        <td>$49,805</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cumulative Savings</strong></td>
+                        <td>$2,669</td>
+                        <td>$16,210</td>
+                        <td>$66,015</td>
+                    </tr>
+                    <!-- </CHANGE> -->
+                </tbody>
+            </table>
+            
+            <div class="success-box">
+                <h4>Key Financial Highlights (Updated with Maintenance Fee & Taxes):</h4>
+                <ul>
+                    <li><strong>Break-even in Month 1:</strong> Only 3 customers needed</li>
+                    <li><strong>95%+ profit margins:</strong> At scale (1,000 customers)</li>
+                    <!-- CHANGE: Updated compensation figures to reflect 27% tax on profit -->
+                    <li><strong>$101K founder compensation:</strong> Year 1 with 200 customers (after 27% taxes on profit)</li>
+                    <li><strong>$335K founder compensation:</strong> Year 2 with 600 customers (after 27% taxes, includes maintenance fee revenue)</li>
+                    <li><strong>$66K business savings:</strong> By end of Year 3 (after taxes)</li>
+                    <!-- </CHANGE> -->
+                    <li><strong>Maintenance fee adds $99/customer/year:</strong> Covers inflation and operational cost increases without raising monthly prices</li>
+                    <li><strong>Sustainable growth:</strong> 10% ops budget ensures long-term stability</li>
+                    <!-- CHANGE: Updated tax description to reflect profit-based calculation -->
+                    <li><strong>Tax planning:</strong> 27% set aside for federal and state taxes (calculated on profit, not revenue)</li>
+                    <!-- </CHANGE> -->
+                </ul>
+            </div>
+            
+            <!-- Added maintenance fee impact analysis -->
+            <div class="highlight-box" style="background: #fef3c7; border-left: 4px solid #f59e0b; margin-top: 30px;">
+                <h3>Impact of Annual Maintenance Fee on Revenue</h3>
+                
+                <p>The $99 annual maintenance fee significantly improves financial sustainability while keeping monthly subscription prices locked in forever:</p>
+                
+                <table style="width: 100%; margin-top: 15px;">
+                    <thead>
+                        <tr>
+                            <th>Customer Count</th>
+                            <th>Annual Maintenance Revenue</th>
+                            <th>Monthly Equivalent</th>
+                            <th>% of Total Revenue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>100 customers</td>
+                            <td>$9,900/year</td>
+                            <td>$825/month</td>
+                            <td>10.6%</td>
+                        </tr>
+                        <tr>
+                            <td>200 customers</td>
+                            <td>$19,800/year</td>
+                            <td>$1,650/month</td>
+                            <td>10.6%</td>
+                        </tr>
+                        <tr>
+                            <td>600 customers</td>
+                            <td>$59,400/year</td>
+                            <td>$4,950/month</td>
+                            <td>10.6%</td>
+                        </tr>
+                        <tr>
+                            <td>1,200 customers</td>
+                            <td>$118,800/year</td>
+                            <td>$9,900/month</td>
+                            <td>10.6%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p style="margin-top: 15px;"><strong>Key Benefits:</strong></p>
+                <ul>
+                    <li>Provides predictable revenue stream to cover infrastructure cost increases</li>
+                    <li>Allows monthly subscription prices to remain locked in for early adopters</li>
+                    <li>Covers rising costs from Vercel, Supabase, Telnyx, and other services</li>
+                    <li>Funds ongoing support, maintenance, and platform improvements</li>
+                    <li>Adds ~10.6% to total revenue without impacting monthly pricing</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Funding & Use of Proceeds -->
+        <div id="funding">
+            <h1>9. Funding & Use of Proceeds</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Allocation</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Marketing & CAC</td>
+                        <td>25%</td>
+                        <td>Paid ads, referrals, partnerships</td>
+                    </tr>
+                    <tr>
+                        <td>Infrastructure & Hosting</td>
+                        <td>25%</td>
+                        <td>Supabase scaling, SMS gateways, optimization</td>
+                    </tr>
+                    <tr>
+                        <td>Product Development</td>
+                        <td>30%</td>
+                        <td>Features, AI analytics, UX</td>
+                    </tr>
+                    <tr>
+                        <td>Operations & Support</td>
+                        <td>15%</td>
+                        <td>Onboarding, automation, admin tools</td>
+                    </tr>
+                    <tr>
+                        <td>Legal & Compliance</td>
+                        <td>5%</td>
+                        <td>Privacy, nonprofit verification, documentation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CAC Breakdown -->
+        <div id="cac">
+            <h1>10. Funding & CAC Breakdown</h1>
+            <p>Blended CAC averages ~$150 per new church with a 1–2 month payback, driven by a mix of paid, referral, and partnership channels.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Channel</th>
+                        <th>% of Marketing Budget</th>
+                        <th>CAC Efficiency</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Facebook/Instagram Ads</td>
+                        <td>35%</td>
+                        <td>$150–$250</td>
+                        <td>High reach for small churches</td>
+                    </tr>
+                    <tr>
+                        <td>Referral Incentives</td>
+                        <td>25%</td>
+                        <td>$50–$100</td>
+                        <td>Low cost, high trust</td>
+                    </tr>
+                    <tr>
+                        <td>Partnerships/Events</td>
+                        <td>20%</td>
+                        <td>$200–$300</td>
+                        <td>Denominations, networks</td>
+                    </tr>
+                    <tr>
+                        <td>SEO/Content</td>
+                        <td>10%</td>
+                        <td>$50/lead</td>
+                        <td>Compounding over time</td>
+                    </tr>
+                    <tr>
+                        <td>Email/Retargeting</td>
+                        <td>10%</td>
+                        <td>$20/lead</td>
+                        <td>Nurtures warm leads</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Option A — Balanced & Sustainable Growth (Recommended)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Allocation</th>
+                        <th>Breakdown</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Marketing & CAC</td>
+                        <td>25%</td>
+                        <td>Paid ads (12%), referrals (8%), partnerships (5%)</td>
+                    </tr>
+                    <tr>
+                        <td>Infrastructure & Hosting</td>
+                        <td>25%</td>
+                        <td>Supabase, APIs, SMS gateways</td>
+                    </tr>
+                    <tr>
+                        <td>Product Development</td>
+                        <td>30%</td>
+                        <td>UI/UX, AI analytics, integrations</td>
+                    </tr>
+                    <tr>
+                        <td>Operations & Support</td>
+                        <td>15%</td>
+                        <td>Onboarding + admin tools</td>
+                    </tr>
+                    <tr>
+                        <td>Legal & Compliance</td>
+                        <td>5%</td>
+                        <td>Privacy, nonprofit setup</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Market Validation -->
+        <div id="validation" class="page-break">
+            <h1>11. Market Validation & Early Traction</h1>
+            <p>Early interest indicates strong demand for unified, affordable church systems. Internal testing demonstrated up to 70% faster service planning and improved team communication. Beta pilots will launch with five churches in Virginia and North Carolina, followed by a referral program to expand regionally.</p>
+            
+            <div class="success-box">
+                <h3>Validation Metrics:</h3>
+                <ul>
+                    <li><span class="checkmark">✓</span> 5 beta churches committed in Virginia & North Carolina</li>
+                    <li><span class="checkmark">✓</span> 70% faster service planning in internal testing</li>
+                    <li><span class="checkmark">✓</span> Strong positive feedback from ministry leaders</li>
+                    <li><span class="checkmark">✓</span> Multiple churches requesting early access</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Go-to-Market Timeline -->
+        <div id="timeline">
+            <h1>12. Go-to-Market Timeline</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Phase</th>
+                        <th>Timeframe</th>
+                        <th>Key Goals</th>
+                        <th>Estimated Cost</th>
+                        <th>Expected Outcome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Phase 1</td>
+                        <td>0–3 months</td>
+                        <td>Launch, onboard 20 churches</td>
+                        <td>$5,000–$7,000</td>
+                        <td>Platform validation</td>
+                    </tr>
+                    <tr>
+                        <td>Phase 2</td>
+                        <td>3–6 months</td>
+                        <td>Refine UX, reach 100 churches</td>
+                        <td>$8,000–$12,000</td>
+                        <td>Growth & optimization</td>
+                    </tr>
+                    <tr>
+                        <td>Phase 3</td>
+                        <td>6–12 months</td>
+                        <td>Add AI, scale to 500+</td>
+                        <td>$20,000–$30,000</td>
+                        <td>Market expansion</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Leadership & Team -->
+        <div id="team">
+            <h1>13. Leadership & Team</h1>
+            
+            <h3>Wes Shinn — Founder & CEO</h3>
+            <p>20+ years in creative, operational, and technical leadership. Deep experience in visual media, systems, and ministry operations.</p>
+            
+            <h3>Keiko Shinn — Co-Founder (Streams Initiative)</h3>
+            <p>Founder of Streams, a digital platform for inner healing. Visionary partner bridging faith and technology.</p>
+            
+            <h3>Planned Roles:</h3>
+            <ul>
+                <li><strong>Contract Developer:</strong> Feature expansion and technical implementation</li>
+                <li><strong>Customer Success Manager:</strong> Onboarding and retention</li>
+                <li><strong>Partnerships Coordinator:</strong> Network and affiliate relationships</li>
+            </ul>
+        </div>
+
+        <!-- Competitive Analysis -->
+        <div id="competitive" class="page-break">
+            <h1>14. Competitive Analysis & Cost Savings</h1>
+            
+            <h2>Deep Competitor Comparison</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Daily One Accord</th>
+                        <th>Planning Center</th>
+                        <th>Church Community Builder</th>
+                        <th>Breeze ChMS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Base Monthly Cost</strong></td>
+                        <!-- Updated pricing range -->
+                        <td>$24–$199 (flat rate, no per-seat charges)</td>
+                        <td>$199+ (modular pricing)</td>
+                        <td>$149+ (per-user fees)</td>
+                        <td>$50+ (limited features)</td>
+                    </tr>
+                    <!-- Added Slack integration comparison -->
+                    <tr>
+                        <td><strong>Slack Integration</strong></td>
+                        <td>Native (real-time, bidirectional)</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>No</td>
+                    </tr>
+                    <!-- Added Slack cost comparison -->
+                    <tr>
+                        <td><strong>Slack Cost (with nonprofit discount)</strong></td>
+                        <td>FREE (we help you apply)</td>
+                        <td>$840-$26,250/year (separate subscription)</td>
+                        <td>$840-$26,250/year (separate subscription)</td>
+                        <td>$840-$26,250/year (separate subscription)</td>
+                    </tr>
+                    <!-- Added unified communication comparison -->
+                    <tr>
+                        <td><strong>Unified Communication</strong></td>
+                        <td>✓ Slack + Email + SMS in one platform</td>
+                        <td>✗ Fragmented across 7 separate products</td>
+                        <td>⚠ Partial integration</td>
+                        <td>⚠ Basic communication tools</td>
+                    </tr>
+                    <!-- Added accountability comparison -->
+                    <tr>
+                        <td><strong>Real-Time Accountability</strong></td>
+                        <td>✓ Kanban boards with Slack notifications</td>
+                        <td>✗ No task management</td>
+                        <td>✗ No task management</td>
+                        <td>✗ No task management</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Social Media Scheduling</strong></td>
+                        <td>✓ Built-in (Growth+)</td>
+                        <td>✗ No</td>
+                        <td>✗ No</td>
+                        <td>✗ No</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Setup Fee</strong></td>
+                        <td>$199 (one-time)</td>
+                        <td>Free</td>
+                        <td>$500+</td>
+                        <td>Free</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Updated cost savings scenarios to include maintenance fee -->
+            <h2>Annual Cost Savings Breakdown (with FREE Slack)</h2>
+
+            <div class="highlight-box">
+                <h3>Scenario 1: Small Church (100 attendees, $8K monthly giving, 8 Slack users)</h3>
+                
+                <h4>The Fragmentation Problem:</h4>
+                <p>This church currently uses multiple disconnected tools. Staff spend 10 hours/month switching between platforms, hunting for information, and manually syncing data. Volunteers complain about missing updates because they're posted in different places.</p>
+                
+                <h4>Current Multi-Tool Stack:</h4>
+                <ul>
+                    <li>Planning Center Services: $1,200/year ($100/month)</li>
+                    <li>Breeze ChMS: $600/year</li>
+                    <li>Mailchimp (500 contacts): $240/year</li>
+                    <li>SimpleTexting SMS: $300/year</li>
+                    <li>Slack: $840/year (8 users × $8.75/month, paid)</li>
+                    <li><strong>Total Annual Cost: $3,180/year</strong></li>
+                </ul>
+                
+                <h4>Daily One Accord (Starter Plan) + FREE Slack:</h4>
+                <ul>
+                    <li>Daily One Accord: $24/month = $288/year</li>
+                    <li>Slack: $0/year (FREE with nonprofit discount, saves $840/year)</li>
+                    <li>Setup: $199 (one-time, Year 1 only)</li>
+                    <li>Annual Maintenance: $0 (Year 1), $99 (Year 2+)</li>
+                    <li>Transaction fees: $8,000 × 12 × 3.1% = $2,976/year</li>
+                    <li><strong>Year 1 Total: $288 + $199 + $0 + $2,976 = $3,463</strong></li>
+                    <li><strong>Year 2+ Total: $288 + $99 + $0 + $2,976 = $3,363/year</strong></li>
+                </ul>
+                
+                <h4>Current Stack + Transaction Fees:</h4>
+                <ul>
+                    <li>Tools: $3,180/year</li>
+                    <li>Transaction fees (Planning Center): $8K × 12 × 3.1% = $2,976/year</li>
+                    <li><strong>Total: $6,156/year</strong></li>
+                </ul>
+                
+                <h4>Time Savings Value:</h4>
+                <p>10 hours/month × $25/hour × 12 = <strong>$3,000/year in recovered staff productivity</strong></p>
+                
+                <div class="success-box">
+                    <strong>Annual Savings (Year 2+): $6,156 - $3,363 = $2,793/year</strong><br>
+                    <strong>Time Savings: $3,000/year</strong><br>
+                    <strong>Total Annual Benefit: $5,793/year</strong><br>
+                    <strong>5-Year Total Benefit: $28,965</strong>
+                </div>
+                
+                <p><strong>Unity Impact:</strong> With only 8 staff, unified communication is critical. Slack integration means your lean team stays coordinated without constant meetings or email threads. Everyone sees the same information in real-time.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Scenario 2: Mid-Sized Church (300 attendees, $40K monthly giving, 15 Slack users)</h3>
+                
+                <h4>The Fragmentation Problem:</h4>
+                <p>This church currently uses Planning Center, Slack, Mailchimp, and SMS tools. Staff spend 20 hours/month switching between these tools, hunting for information, and manually syncing data. The worship leader updates the service plan in Planning Center, but the tech team checks Slack first—leading to Sunday morning confusion.</p>
+                
+                <h4>Current Multi-Tool Stack:</h4>
+                <ul>
+                    <li>Planning Center (Services + Check-Ins): $3,000/year</li>
+                    <li>Slack: $1,575/year (15 users × $8.75/month, paid)</li>
+                    <li>Mailchimp (2,000 contacts): $600/year</li>
+                    <li>SimpleTexting SMS: $600/year</li>
+                    <li><strong>Total Annual Cost: $5,775/year</strong></li>
+                </ul>
+                
+                <h4>Daily One Accord (Growth Plan) + FREE Slack:</h4>
+                <ul>
+                    <li>Daily One Accord: $79/month = $948/year</li>
+                    <li>Slack: $0/year (FREE with nonprofit discount, saves $1,575/year)</li>
+                    <li>Social Media: $0 (included, saves $168/year)</li>
+                    <li>Setup: $199 (one-time, Year 1 only)</li>
+                    <li>Annual Maintenance: $0 (Year 1), $99 (Year 2+)</li>
+                    <li>Transaction fees: $40,000 × 12 × 2.9% = $13,920/year</li>
+                    <li><strong>Year 1 Total: $948 + $199 + $0 + $13,920 = $15,067</strong></li>
+                    <li><strong>Year 2+ Total: $948 + $99 + $0 + $13,920 = $14,967/year</strong></li>
+                </ul>
+                
+                <h4>Current Stack + Transaction Fees:</h4>
+                <ul>
+                    <li>Tools: $5,775/year</li>
+                    <li>Planning Center Giving: $40K × 12 × 2.9% = $13,920/year</li>
+                    <li><strong>Total: $19,695/year</strong></li>
+                </ul>
+                
+                <h4>Time Savings Value:</h4>
+                <p>20 hours/month × $30/hour × 12 = <strong>$7,200/year in staff productivity</strong></p>
+                
+                <div class="success-box">
+                    <strong>Annual Savings (Year 2+): $19,695 - $14,967 = $4,728/year</strong><br>
+                    <strong>Time Savings: $7,200/year</strong><br>
+                    <strong>Total Annual Benefit: $11,928/year</strong><br>
+                    <strong>5-Year Total Benefit: $59,640</strong>
+                </div>
+                
+                <p><strong>Unity Impact:</strong> With 15 staff members across multiple ministries, coordination becomes exponentially complex. Daily One Accord's unified platform eliminates the "telephone game" effect where information gets lost between departments. Service planning happens seamlessly with everyone on the same page.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Scenario 3: Large Church (800 attendees, $120K monthly giving, 50 Slack users)</h3>
+                
+                <h4>The Fragmentation Problem:</h4>
+                <p>This large church uses Planning Center's full suite, CCB, advanced email marketing, SMS platform, and Slack. With 50 staff members, coordination is a nightmare. Information lives in 7 different systems. Staff spend 40 hours/month just coordinating and syncing data.</p>
+                
+                <h4>Current Multi-Tool Stack:</h4>
+                <ul>
+                    <li>Planning Center (Full Suite - 4+ modules): $9,600/year</li>
+                    <li>Slack: $5,250/year (50 users × $8.75/month, paid)</li>
+                    <li>Church Community Builder: $3,588/year + $500 setup</li>
+                    <li>Advanced email marketing: $1,200/year</li>
+                    <li>SMS platform: $1,200/year</li>
+                    <li><strong>Total Annual Cost: $21,338/year</strong></li>
+                </ul>
+                
+                <h4>Daily One Accord (Enterprise Plan) + FREE Slack:</h4>
+                <ul>
+                    <li>Daily One Accord: $199/month = $2,388/year</li>
+                    <li>Slack: $0/year (FREE with nonprofit discount, saves $5,250/year)</li>
+                    <li>Social Media: $0 (included, saves $168/year)</li>
+                    <li>Setup: $199 (one-time, Year 1 only)</li>
+                    <li>Annual Maintenance: $0 (Year 1), $99 (Year 2+)</li>
+                    <li>Transaction fees: $120,000 × 12 × 2.2% = $31,680/year</li>
+                    <li><strong>Year 1 Total: $2,388 + $199 + $0 + $31,680 = $34,267</strong></li>
+                    <li><strong>Year 2+ Total: $2,388 + $99 + $0 + $31,680 = $34,167/year</strong></li>
+                </ul>
+                
+                <h4>Current Stack + Transaction Fees:</h4>
+                <ul>
+                    <li>Tools: $21,338/year</li>
+                    <li>Planning Center Giving: $120K × 12 × 2.9% = $41,760/year</li>
+                    <li><strong>Total: $63,098/year</strong></li>
+                </ul>
+                
+                <h4>Time Savings Value:</h4>
+                <p>40 hours/month × $35/hour × 12 = <strong>$16,800/year in staff productivity</strong></p>
+                
+                <div class="success-box">
+                    <strong>Annual Savings (Year 2+): $63,098 - $34,167 = $28,931/year</strong><br>
+                    <strong>Time Savings: $16,800/year</strong><br>
+                    <strong>Total Annual Benefit: $45,731/year</strong><br>
+                    <strong>5-Year Total Benefit: $228,655</strong>
+                </div>
+                
+                <p><strong>Unity Impact:</strong> At 50 staff members, fragmentation is crippling. Daily One Accord creates ONE source of truth. Your worship leader, youth pastor, communications director, and all ministry teams see the same real-time data. Visitor follow-up happens instantly—not after three forwarded emails.</p>
+            </div>
+
+            <h2>Cost Savings Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Church Size</th>
+                        <th>Slack Users</th>
+                        <th>Current Annual Cost</th>
+                        <th>Daily One Accord (Yr 2+)</th>
+                        <th>Annual Savings</th>
+                        <th>Time Savings Value</th>
+                        <th><strong>Total Annual Benefit</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Small (100)</td>
+                        <td>8</td>
+                        <td>$6,156</td>
+                        <td>$3,363</td>
+                        <td>$2,793</td>
+                        <td>$3,000</td>
+                        <td><strong>$5,793</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Mid (300)</td>
+                        <td>15</td>
+                        <td>$19,695</td>
+                        <td>$14,967</td>
+                        <td>$4,728</td>
+                        <td>$7,200</td>
+                        <td><strong>$11,928</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Large (800)</td>
+                        <td>50</td>
+                        <td>$63,098</td>
+                        <td>$34,167</td>
+                        <td>$28,931</td>
+                        <td>$16,800</td>
+                        <td><strong>$45,731</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Key Competitive Advantages</h3>
+            <ol>
+                <!-- Updated competitive advantages to emphasize unified communication -->
+                <li><strong>Unified Communication:</strong> Slack + Email + SMS in ONE cohesive platform—no more fragmentation</li>
+                <li><strong>Real-Time Accountability:</strong> Kanban boards with Slack notifications keep teams on track</li>
+                <li><strong>FREE Slack for Churches:</strong> Help churches apply for nonprofit discount (saves $840-$26,250/year)</li>
+                <li><strong>Dramatically Lower Pricing:</strong> $24-$199/month vs $199+ for competitors</li>
+                <li><strong>Flat-Rate Seats:</strong> No per-seat charges within plan ranges (3-10, 3-20, unlimited)</li>
+                <li><strong>Social Media Built-In:</strong> First church management system with native social media scheduling</li>
+                <li><strong>Modern Tech Stack:</strong> Fast, secure, mobile-responsive (Next.js 15, Supabase)</li>
+                <li><strong>Time Savings:</strong> 15-20 hours/week saved on coordination and tool-switching</li>
+                <li><strong>Growth-Focused:</strong> System scales with you, maintaining unity at every size</li>
+                <li><strong>Faith-Driven:</strong> Built by ministry leaders, for ministry leaders</li>
+            </ol>
+        </div>
+
+        <!-- Added new Section 14a: Addressing Industry Weaknesses -->
+        <!-- Section 14a: Addressing Church Management System Weaknesses -->
+        <div id="industry-weaknesses" class="page-break">
+            <h1>14a. Addressing Church Management System Weaknesses</h1>
+            
+            <p>Traditional church management systems suffer from eight critical weaknesses that frustrate church staff and limit ministry effectiveness. Daily One Accord was built from the ground up to address each of these pain points. This section demonstrates how our platform specifically solves problems that plague the industry.</p>
+
+            <h2>1. Modern User Experience vs. Outdated Interfaces</h2>
+
+            <div class="comparison-box">
+                <div class="problem-side">
+                    <h3>Industry Problem</h3>
+                    <p>Most church management systems have outdated, clunky interfaces that feel like they're from the early 2000s. Staff and volunteers struggle with steep learning curves, and mobile apps are often afterthoughts rather than well-designed experiences.</p>
+                    <ul>
+                        <li>Confusing navigation and cluttered screens</li>
+                        <li>Poor mobile responsiveness</li>
+                        <li>Inconsistent design across features</li>
+                        <li>Weeks of training required for basic tasks</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-side">
+                    <h3>Daily One Accord Solution</h3>
+                    <p><strong>Modern, Intuitive Interface Built for 2025</strong></p>
+                    <ul>
+                        <li><strong>Clean Design:</strong> Built with shadcn/ui components for professional, consistent look</li>
+                        <li><strong>Mobile-First:</strong> Every feature works seamlessly on phone, tablet, and desktop</li>
+                        <li><strong>Minimal Learning Curve:</strong> Intuitive navigation with contextual help throughout</li>
+                        <li><strong>Visual Feedback:</strong> Drag-and-drop, inline editing, smooth animations</li>
+                        <li><strong>Keyboard Shortcuts:</strong> Power users can work faster (press ? to see shortcuts)</li>
+                    </ul>
+                    
+                    <div class="success-box">
+                        <strong>Real Impact:</strong> New users productive in hours, not weeks. 90% of features require zero training.
+                    </div>
+                </div>
+            </div>
+
+            <h2>2. Balanced Features vs. Over-Complexity or Under-Functionality</h2>
+
+            <div class="comparison-box">
+                <div class="problem-side">
+                    <h3>Industry Problem</h3>
+                    <p>Church software is either bloated with features nobody uses (Planning Center's 10+ modules) or too basic and forces churches to use multiple disconnected tools.</p>
+                </div>
+                
+                <div class="solution-side">
+                    <h3>Daily One Accord Solution</h3>
+                    <p><strong>Exactly What Churches Need, Nothing They Don't</strong></p>
+                    
+                    <h4>Core Features (Always Available):</h4>
+                    <ul>
+                        <li>Member management with custom fields</li>
+                        <li>Attendance tracking (individual and category-based)</li>
+                        <li>Event calendar with registration</li>
+                        <li>Class management with QR codes</li>
+                        <li>Team scheduling (ministry and volunteer)</li>
+                        <li>Visitor pipeline with follow-up tracking</li>
+                    </ul>
+                    
+                    <h4>Communication Suite (Integrated):</h4>
+                    <ul>
+                        <li>Email builder with templates and analytics</li>
+                        <li>Newsletter system</li>
+                        <li>SMS notifications (bulk and scheduled)</li>
+                        <li>Slack integration for team communication</li>
+                    </ul>
+                    
+                    <h4>Advanced Features (When Needed):</h4>
+                    <ul>
+                        <li>Unity kanban boards for project management</li>
+                        <li>Service rundowns with team assignments</li>
+                        <li>Analytics dashboards</li>
+                        <li>Custom automations</li>
+                        <li>API access for developers</li>
+                    </ul>
+                    
+                    <div class="success-box">
+                        <strong>Progressive Disclosure:</strong> Simple features immediately accessible. Advanced features available but not in the way. Menu visibility controls let you hide features you don't use.
+                    </div>
+                </div>
+            </div>
+
+            <h2>3. Deep Integration vs. Data Silos</h2>
+
+            <div class="comparison-box">
+                <div class="problem-side">
+                    <h3>Industry Problem</h3>
+                    <p>Even when churches use multiple tools, these systems don't talk to each other. Data gets siloed between accounting software, website, email platform, and ChMS, requiring manual duplicate entry.</p>
+                    <ul>
+                        <li>Attendance data doesn't sync with member records</li>
+                        <li>Email lists separate from member database</li>
+                        <li>Calendar events don't trigger team notifications</li>
+                        <li>Staff waste hours copying data between systems</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-side">
+                    <h3>Daily One Accord Solution</h3>
+                    <p><strong>Single Source of Truth with Native Integrations</strong></p>
+                    
+                    <h4>Native Integrations:</h4>
+                    <ul>
+                        <li><strong>Slack:</strong> Deep integration for attendance, rundowns, team communication</li>
+                        <li><strong>Stripe:</strong> Built-in payment processing</li>
+                        <li><strong>Email (Resend):</strong> Professional delivery with analytics</li>
+                        <li><strong>SMS (Telnyx):</strong> Text messaging for alerts and campaigns</li>
+                        <li><strong>Google Drive:</strong> Media asset management</li>
+                        <li><strong>Zoom:</strong> Video conferencing integration</li>
+                    </ul>
+                    
+                    <h4>Data Flows Automatically:</h4>
+                    <ul>
+                        <li>Attendance taken in Slack appears in dashboard immediately</li>
+                        <li>Member updates sync across all features</li>
+                        <li>Email analytics feed into reporting dashboard</li>
+                        <li>Calendar events automatically notify relevant teams</li>
+                    </ul>
+                    
+                    <h4>API-First Architecture:</h4>
+                    <ul>
+                        <li>RESTful API for custom integrations</li>
+                        <li>Webhooks for real-time event notifications</li>
+                        <li>Zapier support (optional) for 5,000+ apps</li>
+                        <li>Developer documentation for custom tools</li>
+                    </ul>
+                    
+                    <div class="success-box">
+                        <strong>Real Impact:</strong> Eliminate duplicate data entry. One update propagates everywhere. Staff save 15-20 hours/week on coordination.
+                    </div>
+                </div>
+            </div>
+
+            <h2>4. Comprehensive Communication vs. Limited Tools</h2>
+
+            <div class="comparison-box">
+                <div class="problem-side">
+                    <h3>Industry Problem</h3>
+                    <p>Email capabilities are often limited, SMS features cost extra or don't exist, and there's rarely good support for modern communication preferences across different demographics.</p>
+                    <ul>
+                        <li>Basic email with no templates or analytics</li>
+                        <li>SMS costs $0.10-0.15 per message (or not available)</li>
+                        <li>No Slack integration</li>
+                        <li>Can't reach different age groups on their preferred platforms</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-side">
+                    <h3>Daily One Accord Solution</h3>
+                    <p><strong>Multi-Channel Communication Suite</strong></p>
+                    
+                    <h4>Email System:</h4>
+                    <ul>
+                        <li>Visual drag-and-drop email builder</li>
+                        <li>Template library for common communications</li>
+                        <li>Personalization with dynamic fields</li>
+                        <li>Track opens, clicks, and engagement</li>
+                        <li>Newsletter system with subscriber management</li>
+                        <li>Automated emails (welcome, reminders, follow-ups)</li>
+                    </ul>
+                    
+                    <h4>SMS Capabilities:</h4>
+                    <ul>
+                        <li>Bulk SMS to groups or filtered lists</li>
+                        <li>Scheduled messages</li>
+                        <li>Two-way messaging with replies</li>
+                        <li>Delivery tracking</li>
+                        <li>Cost-effective pricing through Telnyx</li>
+                        <li>Built-in opt-out management</li>
+                    </ul>
+                    
+                    <h4>Slack Integration:</h4>
+                    <ul>
+                        <li>Embedded Slack chat in dashboard</li>
+                        <li>/attendance command for quick check-ins</li>
+                        <li>Rundown publishing to teams</li>
+                        <li>Real-time notifications</li>
+                        <li>Channel management from dashboard</li>
+                    </ul>
+                    
+                    <div class="success-box">
+                        <strong>Multi-Generational Reach:</strong> Younger members via Slack/SMS. Older members via email. Unified dashboard to manage all communications. Consistent messaging across all channels.
+                    </div>
+                </div>
+            </div>
+
+            <h2>5. Comprehensive Volunteer Management vs. Scheduling Gaps</h2>
+
+            <div class="comparison-box">
+                <div class="problem-side">
+                    <h3>Industry Problem</h3>
+                    <p>Scheduling volunteers, tracking certifications (like background checks), and managing recurring service roles is often cumbersome or poorly implemented.</p>
+                </div>
+                
+                <div class="solution-side">
+                    <h3>Daily One Accord Solution</h3>
+                    <p><strong>Complete Team and Volunteer System</strong></p>
+                    
+                    <h4>Ministry Teams:</h4>
+                    <ul>
+                        <li>Create teams for different ministries</li>
+                        <li>Assign team leaders and members</li>
+                        <li>Track roles and responsibilities</li>
+                        <li>Team-specific communication tools</li>
+                    </ul>
+                    
+                    <h4>Service Rundowns:</h4>
+                    <ul>
+                        <li>Detailed service plans with team assignments</li>
+                        <li>Assign specific people to specific roles</li>
+                        <li>Track who's scheduled for each service</li>
+                        <li>Publish rundowns to Slack for visibility</li>
+                        <li>Email rundowns to team members</li>
+                    </ul>
+                    
+                    <h4>Scheduling Features:</h4>
+                    <ul>
+                        <li>Recurring role assignments</li>
+                        <li>Substitute management</li>
+                        <li>Availability tracking</li>
+                        <li>Conflict detection</li>
+                        <li>Automated reminders</li>
+                    </ul>
+                    
+                    <h4>Unity Kanban Boards:</h4>
+                    <ul>
+                        <li>Project management for ministry initiatives</li>
+                        <li>Task assignments with due dates</li>
+                        <li>Progress tracking with visual boards</li>
+                        <li>Custom fields for volunteer-specific data</li>
+                        <li>Comments and activity feeds</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <strong>Planned Enhancement:</strong> Certification tracking (background checks, training completion, compliance reporting, automated renewal reminders)
+                    </div>
+                </div>
+            </div>
+
+            <h2>6. Data-Driven Insights vs. Basic Reports</h2>
+
+            <div class="comparison-box">
+                <div class="problem-side">
+                    <h3>Industry Problem</h3>
+                    <p>Many systems offer basic reports but lack customizable analytics or insights that help church leaders make data-informed decisions about growth, engagement, or giving trends.</p>
+                </div>
+                
+                <div class="solution-side">
+                    <h3>Daily One Accord Solution</h3>
+                    <p><strong>Multi-Level Analytics Dashboard</strong></p>
+                    
+                    <h4>Attendance Analytics:</h4>
+                    <ul>
+                        <li>Trend analysis over time</li>
+                        <li>Category breakdowns (adults, children, visitors)</li>
+                        <li>Event comparison</li>
+                        <li>Growth metrics with visual charts</li>
+                        <li>Exportable data</li>
+                    </ul>
+                    
+                    <h4>Email Analytics:</h4>
+                    <ul>
+                        <li>Open rates and click-through rates</li>
+                        <li>Engagement trends</li>
+                        <li>Best performing content</li>
+                        <li>Subscriber growth</li>
+                        <li>Campaign comparison</li>
+                    </ul>
+                    
+                    <h4>Member Engagement:</h4>
+                    <ul>
+                        <li>Attendance patterns per member</li>
+                        <li>Class participation</li>
+                        <li>Event registration history</li>
+                        <li>Communication preferences</li>
+                        <li>Engagement scoring</li>
+                    </ul>
+                    
+                    <h4>Visitor Pipeline Analytics:</h4>
+                    <ul>
+                        <li>Conversion rates by stage</li>
+                        <li>Follow-up effectiveness</li>
+                        <li>Time-to-conversion metrics</li>
+                        <li>Assignment performance</li>
+                        <li>Drop-off analysis</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <strong>Planned:</strong> Custom report builder with drag-and-drop, scheduled automated delivery, export to Excel/PDF/CSV, predictive analytics for planning
+                    </div>
+                </div>
+            </div>
+
+            <h2>7. Transparent Pricing vs. Hidden Fees</h2>
+
+            <div class="comparison-box">
+                <div class="problem-side">
+                    <h3>Industry Problem</h3>
+                    <p>Pricing can be prohibitive for smaller churches, or the "nickel and dime" approach where basic features require expensive add-ons makes budgeting difficult.</p>
+                    <ul>
+                        <li>Per-user pricing that scales unpredictably</li>
+                        <li>Feature paywalls (SMS, advanced reports, etc.)</li>
+                        <li>Surprise charges for usage overages</li>
+                        <li>Complex pricing tiers that confuse buyers</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-side">
+                    <h3>Daily One Accord Solution</h3>
+                    <p><strong>Simple, All-Inclusive Pricing</strong></p>
+                    
+                    <h4>Three Clear Tiers:</h4>
+                    <ul>
+                        <li><strong>Starter:</strong> $24/month + $199 setup (one-time)</li>
+                        <li><strong>Growth:</strong> $79/month + $199 setup (one-time)</li>
+                        <li><strong>Enterprise:</strong> $199/month + $199 setup (one-time)</li>
+                    </ul>
+                    
+                    <h4>What's Included (All Tiers):</h4>
+                    <ul>
+                        <li>All core features (members, attendance, events, calendar, classes)</li>
+                        <li>Communication tools (email, SMS, Slack integration)</li>
+                        <li>Team management and visitor pipeline</li>
+                        <li>Analytics and reporting</li>
+                        <li>Mobile access and unlimited users</li>
+                        <li>Customer support and regular updates</li>
+                    </ul>
+                    
+                    <h4>No Hidden Fees:</h4>
+                    <ul>
+                        <li>No per-user pricing</li>
+                        <li>No feature paywalls</li>
+                        <li>No surprise charges</li>
+                        <li>SMS and email costs are transparent</li>
+                        <li>Setup fee is one-time only</li>
+                        <li>Annual maintenance fee: $99/year (Year 2+)</li>
+                    </ul>
+                    
+                    <div class="success-box">
+                        <strong>Value Proposition:</strong> Replace 3-5 separate tools with one platform. Save $2,793-$28,931/year depending on church size. Predictable budgeting with fixed monthly costs.
+                    </div>
+                </div>
+            </div>
+
+            <h2>8. Enterprise-Grade Security vs. Weak Data Protection</h2>
+
+            <div class="comparison-box">
+                <div class="problem-side">
+                    <h3>Industry Problem</h3>
+                    <p>Some systems have weak security practices or unclear policies about who owns and can access sensitive member data. Churches are increasingly concerned about data breaches and privacy compliance.</p>
+                    <ul>
+                        <li>Unclear data ownership policies</li>
+                        <li>Weak access controls</li>
+                        <li>No audit logging</li>
+                        <li>Ambiguous privacy compliance</li>
+                        <li>Limited backup and recovery options</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-side">
+                    <h3>Daily One Accord Solution</h3>
+                    <p><strong>Bank-Level Security and Privacy</strong></p>
+                    
+                    <h4>Infrastructure:</h4>
+                    <ul>
+                        <li>Built on Supabase (enterprise PostgreSQL)</li>
+                        <li>Hosted on Vercel's global edge network</li>
+                        <li>Automatic SSL/TLS encryption</li>
+                        <li>DDoS protection</li>
+                        <li>99.9% uptime SLA</li>
+                    </ul>
+                    
+                    <h4>Data Protection:</h4>
+                    <ul>
+                        <li><strong>Row Level Security (RLS):</strong> Every query automatically filtered by permissions</li>
+                        <li><strong>Encryption at Rest:</strong> All data encrypted in database</li>
+                        <li><strong>Encryption in Transit:</strong> All connections use HTTPS/TLS</li>
+                        <li><strong>Secure Authentication:</strong> Industry-standard OAuth and JWT tokens</li>
+                        <li><strong>Password Security:</strong> Bcrypt hashing with salt</li>
+                    </ul>
+                    
+                    <h4>Access Controls:</h4>
+                    <ul>
+                        <li>Role-based permissions (Super Admin, Lead Admin, Admin, Staff, Member)</li>
+                        <li>Granular permissions for view, edit, delete</li>
+                        <li>Audit logs track all data access and changes</li>
+                        <li>Multi-factor authentication (planned)</li>
+                        <li>IP whitelisting (Enterprise tier)</li>
+                    </ul>
+                    
+                    <h4>Data Ownership:</h4>
+                    <ul>
+                        <li><strong>You Own Your Data:</strong> Churches retain full ownership</li>
+                        <li><strong>Export Anytime:</strong> Download all data in standard formats</li>
+                        <li><strong>Delete Anytime:</strong> Request complete data deletion</li>
+                        <li><strong>No Data Mining:</strong> We never sell or share your data</li>
+                        <li><strong>No Ads:</strong> Your member data is never used for advertising</li>
+                    </ul>
+                    
+                    <h4>Privacy Compliance:</h4>
+                    <ul>
+                        <li>GDPR Compliant (European data protection)</li>
+                        <li>CCPA Compliant (California privacy regulations)</li>
+                        <li>COPPA Considerations (children's data protection)</li>
+                        <li>Church privacy best practices</li>
+                    </ul>
+                    
+                    <h4>Backup and Recovery:</h4>
+                    <ul>
+                        <li>Automatic daily backups</li>
+                        <li>Point-in-time recovery (30 days)</li>
+                        <li>Multi-region redundancy</li>
+                        <li>Configurable retention policies</li>
+                    </ul>
+                    
+                    <h4>Monitoring:</h4>
+                    <ul>
+                        <li>Real-time monitoring with Sentry integration</li>
+                        <li>Security alerts for suspicious activity</li>
+                        <li>Performance monitoring</li>
+                        <li>24/7 uptime tracking</li>
+                    </ul>
+                    
+                    <div class="success-box">
+                        <strong>Transparency:</strong> Clear privacy policy in plain language. Detailed security documentation available. Incident response plan. Regular security updates.
+                    </div>
+                </div>
+            </div>
+
+            <h2>Comprehensive Competitive Comparison Matrix</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature Category</th>
+                        <th>Daily One Accord</th>
+                        <th>Traditional ChMS</th>
+                        <th>Our Advantage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>User Interface</strong></td>
+                        <td>Modern, intuitive (2025 design)</td>
+                        <td>Outdated, clunky (2000s design)</td>
+                        <td>90% less training time</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mobile Experience</strong></td>
+                        <td>Mobile-first design</td>
+                        <td>Afterthought, limited functionality</td>
+                        <td>Full feature parity on mobile</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Learning Curve</strong></td>
+                        <td>Minimal (hours to productivity)</td>
+                        <td>Steep (weeks of training)</td>
+                        <td>Immediate ROI</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Feature Balance</strong></td>
+                        <td>Just right (comprehensive without bloat)</td>
+                        <td>Too much or too little</td>
+                        <td>Use what you need, hide what you don't</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Integrations</strong></td>
+                        <td>Deep, native integrations</td>
+                        <td>Limited, siloed</td>
+                        <td>Single source of truth</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email Tools</strong></td>
+                        <td>Full-featured visual builder</td>
+                        <td>Basic text editor</td>
+                        <td>Professional communications</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SMS Capabilities</strong></td>
+                        <td>Included, affordable</td>
+                        <td>Extra cost or missing</td>
+                        <td>Multi-channel reach</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Slack Integration</strong></td>
+                        <td>Deep, bidirectional</td>
+                        <td>None</td>
+                        <td>Modern team communication</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Volunteer Scheduling</strong></td>
+                        <td>Streamlined with automation</td>
+                        <td>Cumbersome manual process</td>
+                        <td>Save 10+ hours/week</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Analytics</strong></td>
+                        <td>Customizable insights</td>
+                        <td>Basic reports only</td>
+                        <td>Data-driven decisions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pricing Model</strong></td>
+                        <td>Transparent, all-inclusive</td>
+                        <td>Nickel-and-dime add-ons</td>
+                        <td>Predictable budgeting</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Small Church Friendly</strong></td>
+                        <td>Starts at $24/month</td>
+                        <td>$100-200/month minimum</td>
+                        <td>Accessible to all church sizes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Security</strong></td>
+                        <td>Enterprise-grade (RLS, encryption)</td>
+                        <td>Unclear or basic</td>
+                        <td>Bank-level protection</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Ownership</strong></td>
+                        <td>You own your data, export anytime</td>
+                        <td>Ambiguous policies</td>
+                        <td>Complete control</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Privacy Compliance</strong></td>
+                        <td>GDPR/CCPA compliant</td>
+                        <td>Minimal compliance</td>
+                        <td>Peace of mind</td>
+                    </tr>
+                    <tr>
+                        <td><strong>API Access</strong></td>
+                        <td>Included, well-documented</td>
+                        <td>Limited or expensive add-on</td>
+                        <td>Extensibility</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Support Quality</strong></td>
+                        <td>Responsive, knowledgeable</td>
+                        <td>Slow, outsourced</td>
+                        <td>Fast resolution</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="success-box">
+                <h3>Summary: Built to Solve Real Problems</h3>
+                <p>Daily One Accord addresses every major weakness in traditional church management systems. We're not just cheaper—we're fundamentally better designed for how churches actually operate in 2025. Our modern interface, deep integrations, comprehensive communication tools, transparent pricing, and enterprise-grade security create a platform that churches can trust and staff actually want to use.</p>
+            </div>
+        </div>
+        <!-- </CHANGE> -->
+
+        <!-- Sales Strategy -->
+        <div id="sales" class="page-break">
+            <h1>15. Sales Strategy & Acquisition Tactics</h1>
+            
+            <h2>Multi-Channel Acquisition Strategy</h2>
+            
+            <h3>1. Facebook & Instagram Ads (Primary Channel - 35% of budget)</h3>
+            
+            <h4>Target Audiences:</h4>
+            <ul>
+                <li>Church administrators (job title targeting)</li>
+                <li>Church staff members (interest targeting: "Church Management," "Ministry")</li>
+                <li>Decision-makers at churches with 50–500 attendees</li>
+                <li>Geographic: Virginia, North Carolina, South Carolina, Tennessee (Phase 1)</li>
+            </ul>
+            
+            <h4>Ad Creative Themes:</h4>
+            <ul>
+                <li>"Stop Juggling 7 Apps. One Platform for Everything."</li>
+                <li>"Save $10K–$36K/Year on Church Software" ⭐ <strong>PRIMARY MESSAGE</strong></li>
+                <li>"Mid-Sized Churches Save $10,452 Annually with Daily One Accord"</li>
+                <li>"Planning Center Alternative: Same Features, Half the Cost"</li>
+                <li>"Built by Ministry Leaders, For Ministry Leaders"</li>
+            </ul>
+            
+            <div class="success-box">
+                <h4>Cost Savings Headlines (Proven High Conversion):</h4>
+                <ul>
+                    <li>"Is your church spending $18K/year on software? We can cut that in half."</li>
+                    <li>"Save $36,000 over 5 years. Same features. Better technology."</li>
+                    <li>"Churches using Planning Center: You're overpaying by $10K+/year"</li>
+                    <li>"What would your church do with an extra $10,000 annually?"</li>
+                </ul>
+            </div>
+            
+            <h4>Campaign Structure:</h4>
+            <ul>
+                <li><strong>Awareness:</strong> Video testimonials, pain-point content</li>
+                <li><strong>Consideration:</strong> Feature comparison, demo signup</li>
+                <li><strong>Conversion:</strong> Free trial, setup fee waiver (limited time)</li>
+            </ul>
+            
+            <h4>Budget & Performance:</h4>
+            <ul>
+                <li>Initial test: $500/month (Phase 1)</li>
+                <li>Scaling phase: $2,000/month (Phase 2)</li>
+                <li>Target CPA: $150–$200 per church signup</li>
+            </ul>
+
+            <h3>2. Referral Program (25% of budget)</h3>
+            
+            <div class="success-box">
+                <h4>Church-to-Church Referrals:</h4>
+                <ul>
+                    <li>Referring church gets: $100 credit or 2 months free</li>
+                    <li>New church gets: 1 month free ($79–$199 value)</li>
+                    <li>Tiered rewards: Refer 3 churches = 6 months free</li>
+                </ul>
+            </div>
+            
+            <h4>Pastor Network Incentives:</h4>
+            <ul>
+                <li>Denomination partnerships (5% of all referrals back to network)</li>
+                <li>District/regional leaders get admin dashboard for their churches</li>
+                <li>Co-branded onboarding materials</li>
+            </ul>
+
+            <h3>3. Partnership & Affiliates (20% of budget)</h3>
+            
+            <h4>Target Partnerships:</h4>
+            <ul>
+                <li><strong>Denominations:</strong> Assemblies of God, Southern Baptist, Methodist networks</li>
+                <li><strong>Church Planting Networks:</strong> ARC, Stadia, V1 Church</li>
+                <li><strong>Ministry Conferences:</strong> Exponential, Orange Conference, Catalyst</li>
+                <li><strong>Church Consultants:</strong> Vanderbloemen, Chemistry Staffing, The Unstuck Group</li>
+                <li><strong>Financial Services:</strong> Evangelical Christian Credit Union, Church Finance Academy</li>
+            </ul>
+            
+            <h4>Affiliate Program:</h4>
+            <ul>
+                <li>20% recurring commission for first 12 months</li>
+                <li>30-day cookie window</li>
+                <li>Affiliate dashboard with promo codes and tracking</li>
+            </ul>
+
+            <h3>4. Outbound Direct Sales (10% of budget)</h3>
+            
+            <div class="highlight-box">
+                <h4>Sample Email Outreach (Day 0):</h4>
+                <p><strong>Subject:</strong> Is your church spending $15K+/year on software?</p>
+                <p>Hi [Pastor Name],</p>
+                <p>I noticed [Church Name] is using [Tool A] and [Tool B] for your church management. With the new $24/month Starter Plan and FREE Slack, we're seeing churches save an average of $10,000/year.</p>
+                <p>Quick question: What's your annual software budget?</p>
+                <p>Most churches your size tell us they spend <strong>$15,000–$20,000/year</strong> across multiple platforms:</p>
+                <ul>
+                    <li>→ Planning Center or similar ChMS</li>
+                    <li>→ Email marketing (Mailchimp, etc.)</li>
+                    <li>→ SMS/texting platform</li>
+                    <li>→ Separate giving processor</li>
+                    <li>→ Plus 10–20 hours/week managing it all</li>
+                </ul>
+                <p><strong>What if you could cut that cost in half AND save 15+ hours per week?</strong></p>
+                <p>That's Daily One Accord. One unified platform that does everything Planning Center does—for literally half the price.</p>
+                <p><strong>Real numbers from churches like yours:</strong></p>
+                <ul>
+                    <li>✓ Small Church (8 Slack users): Saves $5,136/year + FREE Slack</li>
+                    <li>✓ Mid-Size Church (15 Slack users): Saves $4,827/year + FREE Slack</li>
+                    <li>✓ Large Church (50 Slack users): Saves $29,030/year + FREE Slack</li>
+                    <li>✓ Average time savings: 15 hours/week</li>
+                </ul>
+                <p>Want to see exactly how much YOUR church could save? I can run the numbers in 5 minutes.</p>
+                <p>[Book 15-Min Cost Analysis]</p>
+                <p>Grace and peace,<br>Wes Shinn<br>Founder & CEO, Daily One Accord<br>P.S. No obligation. Even if you don't switch, we'll help you know what you're paying vs. what you could be paying.</p>
+            </div>
+
+            <h2>Demo Flow & Sales Process</h2>
+            
+            <h3>Step 1: Discovery Call (15 minutes)</h3>
+            <h4>Qualification Questions:</h4>
+            <ul>
+                <li>How many people attend your church?</li>
+                <li>What tools are you currently using? (ChMS, giving, communication)</li>
+                <li>What's your biggest frustration with your current setup?</li>
+                <li>Who makes software decisions at your church?</li>
+                <li>What's your monthly giving volume?</li>
+                <li>How many people on your staff/volunteer team use Slack?</li>
+            </ul>
+
+            <h3>Step 2: Full Product Demo (30 minutes)</h3>
+            <h4>Demo Script Structure:</h4>
+            <ol>
+                <li><strong>Introduction (2 min):</strong> "Before we dive in, let me show you something that usually surprises people..." [Pull up cost comparison calculator] "Based on what you told me, you're spending approximately $X per year. By the end of this demo, you'll see how we can cut that to $Y—that's $Z saved annually, plus FREE Slack!"</li>
+                <li><strong>Dashboard Overview (3 min):</strong> "This is mission control for your entire church"</li>
+                <li><strong>Visitor Follow-Up (5 min):</strong> "See how this automates what used to take hours"</li>
+                <li><strong>Service Planning (5 min):</strong> "Planning Center features at half the price, with Slack integration"</li>
+                <li><strong>Team Communication (5 min):</strong> "Slack integration means no switching between apps. Every notification, task, and update happens where your team already works."</li>
+                <li><strong>Cost Comparison Deep Dive (5 min):</strong> Show detailed cost breakdown:
+                    <ul>
+                        <li>Current annual spend: $X</li>
+                        <li>Daily One Accord annual cost: $Y</li>
+                        <li>Annual savings: $Z</li>
+                        <li>5-year savings: $Z × 5</li>
+                        <li>"What could your church do with an extra $Z per year, plus FREE Slack?"</li>
+                    </ul>
+                </li>
+                <li><strong>Call to Action (5 min):</strong> "30-day free trial. I'll migrate your data personally. If you don't save money and gain clarity, we'll help you switch back—no hard feelings. Let's get you set up with your free trial."</li>
+            </ol>
+
+            <h2>Objection Handling Scripts</h2>
+            
+            <div class="warning-box">
+                <h4>Objection 1: "We're already using Planning Center and it works fine."</h4>
+                <p><strong>Response:</strong> "That's great! Planning Center is a solid tool. A lot of our churches came from Planning Center. The question we ask is: Are you using all 7 modules? Most churches use 2–3, but still pay for the full suite. With Daily One Accord, you get everything in one platform for about half the cost — plus Slack integration, which Planning Center doesn't offer, and we help you get FREE Slack. Want to see a side-by-side comparison?"</p>
+            </div>
+            
+            <div class="warning-box">
+                <h4>Objection 2: "We don't have budget for new software right now."</h4>
+                <p><strong>Response:</strong> "I totally understand budget constraints. That's actually why we built this. Let me ask — what are you currently spending on church software? [Listen] Here's what most churches your size discover: you're probably spending $15K–$20K per year across Planning Center, Mailchimp, texting platforms, and giving processors, PLUS you're paying for Slack. Daily One Accord replaces all of that for $3K–$15K per year, and we help you get Slack for FREE. That's $5,000+ back in your budget annually, plus the value of Slack. So the real question isn't 'Can we afford this?' It's 'Can we afford NOT to switch?' Would a 5-minute cost analysis showing your exact savings be worth your time?"</p>
+            </div>
+            
+            <div class="warning-box">
+                <h4>Objection 3: "Our staff is too busy to learn a new system."</h4>
+                <p><strong>Response:</strong> "That's exactly the problem we solve. Our average church saves 15-20 hours per week because everything is in one place. No more switching between apps, re-entering data, or tracking down information in five different systems. Plus, because we integrate with Slack, your team uses the tool they already know. We also handle data migration and provide hands-on training. Most churches are fully onboarded in under 2 weeks."</p>
+            </div>
+        </div>
+
+        <!-- Customer Success Playbook -->
+        <div id="customer-success" class="page-break">
+            <h1>16. Customer Success Playbook</h1>
+            
+            <h2>Onboarding Timeline (First 90 Days)</h2>
+            
+            <h3>Week 1: Setup & Activation</h3>
+            
+            <h4>Day 1 — Welcome & Kickoff Call (30 min)</h4>
+            <ul>
+                <li>Meet customer success manager</li>
+                <li>Review church's goals and pain points</li>
+                <li>Set success metrics for first 90 days</li>
+                <li>Schedule weekly check-ins</li>
+                <li>Provide access credentials and welcome packet</li>
+                <li>Guide through Slack nonprofit discount application</li>
+            </ul>
+            
+            <h4>Day 2–3 — Data Migration</h4>
+            <ul>
+                <li>Import existing contact database (CSV upload or API sync)</li>
+                <li>Transfer calendar events and service schedules</li>
+                <li>Set up giving integration (connect Stripe/bank account)</li>
+                <li>Import team/volunteer roster</li>
+                <li>Configure Slack workspace connection</li>
+            </ul>
+            
+            <h4>Day 4–5 — Core Configuration</h4>
+            <ul>
+                <li>Set up user roles and permissions</li>
+                <li>Configure ministry departments and teams</li>
+                <li>Create service planning templates</li>
+                <li>Build custom forms (visitor cards, sign-ups)</li>
+                <li>Connect Google Drive for media assets</li>
+            </ul>
+            
+            <h4>Day 6–7 — Team Training (First Session)</h4>
+            <ul>
+                <li>1-hour group training for key staff (pastors, admins)</li>
+                <li>Platform overview and navigation</li>
+                <li>Hands-on practice: Create a service plan</li>
+                <li>Q&A and troubleshooting</li>
+                <li>Assign "homework" (set up first real event)</li>
+            </ul>
+            
+            <div class="success-box">
+                <h4>Success Metrics for Week 1:</h4>
+                <ul>
+                    <li><span class="checkmark">✓</span> All Slack users logged in</li>
+                    <li><span class="checkmark">✓</span> At least 50 contacts imported</li>
+                    <li><span class="checkmark">✓</span> 1 service plan created</li>
+                    <li><span class="checkmark">✓</span> Slack integration active</li>
+                    <li><span class="checkmark">✓</span> Nonprofit discount application initiated</li>
+                </ul>
+            </div>
+
+            <h3>Week 2–4: Feature Adoption</h3>
+            
+            <h4>Week 2 Focus: Communication Tools</h4>
+            <ul>
+                <li>Training: Email and SMS campaigns</li>
+                <li>Set up automated visitor follow-up workflows</li>
+                <li>Create announcement templates</li>
+                <li>Practice: Send first church-wide message</li>
+                <li>Check-in call: Review delivery rates and engagement</li>
+            </ul>
+            
+            <h4>Week 3 Focus: Volunteer Management</h4>
+            <ul>
+                <li>Training: Team scheduling and shift management</li>
+                <li>Set up volunteer role assignments</li>
+                <li>Create recurring schedule templates</li>
+                <li>Practice: Schedule volunteers for upcoming Sunday</li>
+                <li>Check-in call: Address volunteer onboarding questions</li>
+            </ul>
+            
+            <h4>Week 4 Focus: Analytics & Reporting</h4>
+            <ul>
+                <li>Training: Dashboard customization and report generation</li>
+                <li>Review attendance trends and engagement metrics</li>
+                <li>Set up recurring reports (weekly attendance, giving summary)</li>
+                <li>Practice: Create custom report for elders/board</li>
+                <li>Check-in call: Discuss insights and data questions</li>
+            </ul>
+
+            <h3>Week 5–8: Optimization & Advanced Features</h3>
+            <ul>
+                <li>Set up automated workflows (visitor follow-up, birthday messages)</li>
+                <li>Create conditional logic forms</li>
+                <li>Implement integration webhooks</li>
+                <li>Implement multi-step follow-up sequences</li>
+                <li>Advanced service planning features</li>
+                <li>Custom dashboard widgets</li>
+            </ul>
+
+            <h3>Week 9–12: Mastery & Expansion</h3>
+            <ul>
+                <li>Expand usage to all ministry departments</li>
+                <li>Train additional volunteers/leaders</li>
+                <li>Implement advanced reporting</li>
+                <li>Review and optimize existing workflows</li>
+                <li>90-day success review call</li>
+                <li>Measure ROI (time saved, cost savings, engagement lift)</li>
+                <li>Request testimonial/case study</li>
+            </ul>
+
+            <h2>Training Materials Library</h2>
+            
+            <h3>Video Tutorials (5–10 min each)</h3>
+            <ol>
+                <li>Platform Overview & Navigation</li>
+                <li>Creating Your First Service Plan</li>
+                <li>Managing Visitors & Follow-Up</li>
+                <li>Sending Email & SMS Campaigns</li>
+                <li>Volunteer Scheduling Made Easy</li>
+                <li>Building Custom Forms</li>
+                <li>Understanding Your Analytics Dashboard</li>
+                <li>Slack Integration Best Practices</li>
+                <li>Google Drive Media Management</li>
+                <li>Mobile App Quick Start</li>
+            </ol>
+
+            <h2>Retention Strategies</h2>
+            
+            <h3>Health Score Monitoring</h3>
+            
+            <div class="warning-box">
+                <h4>Red Flags (Churn Risk Indicators:</h4>
+                <ul>
+                    <li>❌ No logins in past 7 days</li>
+                    <li>❌ Less than 3 active users</li>
+                    <li>❌ No services planned in 2+ weeks</li>
+                    <li>❌ No emails/SMS sent in 30 days</li>
+                    <li>❌ Support tickets unresolved</li>
+                    <li>❌ Negative feedback in surveys</li>
+                </ul>
+            </div>
+            
+            <div class="success-box">
+                <h4>Green Flags (High Retention Signals:</h4>
+                <ul>
+                    <li><span class="checkmark">✓</span> Daily active users</li>
+                    <li><span class="checkmark">✓</span> Using 5+ modules regularly</li>
+                    <li><span class="checkmark">✓</span> Growing contact database</li>
+                    <li><span class="checkmark">✓</span> Increasing volunteer engagement</li>
+                    <li><span class="checkmark">✓</span> Positive NPS score (9–10)</li>
+                    <li><span class="checkmark">✓</span> Referrals provided</li>
+                </ul>
+            </div>
+
+            <h3>Churn Prevention Protocol</h3>
+            <h4>30-Day Pre-Cancellation Save Sequence:</h4>
+            <ul>
+                <li><strong>Day 1:</strong> Immediate call from success manager — identify root cause</li>
+                <li><strong>Day 3:</strong> Offer tailored solution (discount, training, feature access)</li>
+                <li><strong>Day 7:</strong> Executive outreach from founder</li>
+                <li><strong>Day 14:</strong> Final retention offer (3 months free if they stay)</li>
+                <li><strong>Day 20:</strong> Exit interview if still canceling</li>
+            </ul>
+        </div>
+
+        <!-- Product Roadmap -->
+        <div id="roadmap" class="page-break">
+            <h1>17. Product Roadmap Framework</h1>
+            
+            <h2>Roadmap Prioritization Framework</h2>
+            
+            <h3>Evaluation Criteria (Weighted Scoring:</h3>
+            <ol>
+                <li><strong>Customer Impact (30%):</strong> How many customers benefit?</li>
+                <li><strong>Revenue Impact (25%):</strong> Does it drive upgrades or retention?</li>
+                <li><strong>Competitive Advantage (20%):</strong> Does it differentiate us?</li>
+                <li><strong>Development Effort (15%):</strong> Engineering resources required</li>
+                <li><strong>Strategic Alignment (10%):</strong> Fits long-term vision?</li>
+            </ol>
+
+            <h2>Year 1 Roadmap (Quarters 1–4)</h2>
+            
+            <h3>Q1 (Months 1–3): Foundation & Launch</h3>
+            <div class="success-box">
+                <h4>Status: Current Quarter</h4>
+                <p><strong>Core Features (Launch Requirements):</strong></p>
+                <ul>
+                    <li><span class="checkmark">✓</span> Multi-tenant church setup and onboarding</li>
+                    <li><span class="checkmark">✓</span> User authentication and role-based permissions</li>
+                    <li><span class="checkmark">✓</span> Visitor management and follow-up workflows</li>
+                    <li><span class="checkmark">✓</span> Service planning and rundown creation</li>
+                    <li><span class="checkmark">✓</span> Team and volunteer scheduling</li>
+                    <li><span class="checkmark">✓</span> Event calendar and registration</li>
+                    <li><span class="checkmark">✓</span> Email and SMS communication tools</li>
+                    <li><span class="checkmark">✓</span> Giving integration (Stripe Connect)</li>
+                    <li><span class="checkmark">✓</span> Slack workspace integration</li>
+                    <li><span class="checkmark">✓</span> Google Drive media management</li>
+                    <li><span class="checkmark">✓</span> Basic analytics dashboard</li>
+                </ul>
+                <p><strong>Success Metrics:</strong> Launch to first 5 beta churches, 90%+ core feature stability</p>
+            </div>
+
+            <h3>Q2 (Months 4–6): Optimization & Growth</h3>
+            <div class="highlight-box">
+                <h4>Focus: UX refinement, mobile experience, growth features</h4>
+                <p><strong>Planned Features:</strong></p>
+                <ul>
+                    <li>📱 <strong>Mobile-Responsive Redesign</strong> — Touch-optimized interface for tablets and phones</li>
+                    <li>🤖 <strong>Automated Workflows</strong> — Visual workflow builder with pre-built templates</li>
+                    <li>📊 <strong>Enhanced Analytics</strong> — Custom report builder and engagement scoring</li>
+                    <li>🔗 <strong>Integration Expansion</strong> — Zoom, Mailchimp migration tool, calendar sync</li>
+                    <!-- Added social media scheduling to Q2 roadmap -->
+                    <li>📱 <strong>Social Media Scheduling</strong> — Schedule posts to Facebook, Instagram via Buffer integration</li>
+                </ul>
+                <p><strong>Success Metrics:</strong> Reach 50 active churches, 70%+ mobile usage rate</p>
+            </div>
+
+            <h3>Q3 (Months 7–9): Scale & Intelligence</h3>
+            <div class="highlight-box">
+                <h4>Focus: AI features, mobile app, enterprise readiness</h4>
+                <p><strong>Planned Features:</strong></p>
+                <ul>
+                    <li>🤖 <strong>AI-Powered Insights</strong> — Predictive attendance, engagement risk alerts</li>
+                    <li>📱 <strong>Native Mobile App (iOS/Android)</strong> — Offline mode, push notifications, QR check-in</li>
+                    <li>🏢 <strong>Multi-Site Management</strong> — Campus-level permissions and consolidated reporting</li>
+                    <li>🎨 <strong>Custom Branding</strong> — White-label login pages, branded email templates</li>
+                </ul>
+                <p><strong>Success Metrics:</strong> Reach 150 active churches, 1,000+ mobile app downloads</p>
+            </div>
+
+            <h3>Q4 (Months 10–12): Expansion & Ecosystem</h3>
+            <div class="highlight-box">
+                <h4>Focus: Marketplace, API, advanced features</h4>
+                <p><strong>Planned Features:</strong></p>
+                <ul>
+                    <li>🔌 <strong>Public API & Developer Platform</strong> — RESTful API with OAuth 2.0</li>
+                    <li>🛒 <strong>Integration Marketplace</strong> — Third-party app directory with revenue share</li>
+                    <li>🎓 <strong>Learning Management System</strong> — Online course hosting and tracking</li>
+                    <li>💳 <strong>Advanced Giving Features</strong> — Text-to-give, cryptocurrency, stock gifts</li>
+                </ul>
+                <p><strong>Success Metrics:</strong> Reach 500 active churches, 10+ marketplace integrations</p>
+            </div>
+
+            <h2>Year 2 Roadmap (Preliminary)</h2>
+            <ul>
+                <li><strong>Q1:</strong> Community & Collaboration — Church-to-church messaging, resource sharing</li>
+                <li><strong>Q2:</strong> Advanced Automation — AI-powered engagement, smart scheduling</li>
+                <li><strong>Q3:</strong> Financial Tools — Full accounting integration, budget management</li>
+                <li><strong>Q4:</strong> Global Expansion — Multi-language support, international payments</li>
+            </ul>
+        </div>
+
+        <!-- Risk & Mitigation -->
+        <div id="risk" class="page-break">
+            <h1>18. Risk & Mitigation</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Risk</th>
+                        <th>Description</th>
+                        <th>Mitigation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Adoption Rate</strong></td>
+                        <td>Some churches slow to adopt new tech</td>
+                        <td>Focused pilots, training, and onboarding playbooks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Server Scaling</strong></td>
+                        <td>Traffic spikes may affect performance</td>
+                        <td>Supabase auto-scaling + multi-tenant load balancing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Competitive Response</strong></td>
+                        <td>Legacy players have budget/brands</td>
+                        <td>Differentiate via Slack, UX, and pricing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cash Flow</strong></td>
+                        <td>Bootstrapping can slow growth</td>
+                        <td>Lean ops + recurring revenue + setup fees</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Security Breach</strong></td>
+                        <td>Cyberattack or unauthorized access</td>
+                        <td>SOC 2 compliance, encryption, regular audits</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Key Person Risk</strong></td>
+                        <td>Founder departure or burnout</td>
+                        <td>Document processes, hire leadership team early</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Regulatory Changes</strong></td>
+                        <td>New privacy laws (GDPR, CCPA)</td>
+                        <td>Legal counsel, compliance automation, data residency options</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Mission & Impact -->
+        <div id="mission">
+            <h1>19. Mission & Impact Statement</h1>
+            <div class="quote-box">
+                <p>Daily One Accord exists to unify the Body of Christ through technology that reflects Heaven's order — clear, connected, and collaborative. By reducing administrative burden and improving communication, ministries can devote more time to discipleship, outreach, and care.</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">10,000+</div>
+                    <div class="metric-label">Ministry Hours Freed (Year 1 Goal)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$5M+</div>
+                    <div class="metric-label">Church Savings Generated (Year 1 Goal)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">500+</div>
+                    <div class="metric-label">Churches Unified (Year 1 Goal)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">100%</div>
+                    <div class="metric-label">Kingdom-Focused Purpose</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vision & Future -->
+        <div id="vision">
+            <h1>20. Vision & Future Roadmap</h1>
+            <p>The vision is to become the global operating system for the modern church. Future developments include:</p>
+            <ul>
+                <li><strong>AI-driven engagement analytics and insights</strong> — Predictive modeling for attendance and giving</li>
+                <li><strong>Open API marketplace for third-party integrations</strong> — Ecosystem of church tech partners</li>
+                <li><strong>Cross-church collaboration tools and community dashboards</strong> — Regional network visibility</li>
+                <li><strong>Multi-language support and internationalization</strong> — Expand to Latin America, Europe, Asia</li>
+                <li><strong>White-label solutions for denominations</strong> — Custom branded instances</li>
+                <li><strong>Advanced security and compliance certifications</strong> — SOC 2 Type II, HIPAA for counseling ministries</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <h3>10-Year Vision:</h3>
+                <p><strong>By 2035:</strong> 10,000+ churches unified on Daily One Accord across 50+ countries, representing 5+ million people connected through Kingdom-centered technology. Total church savings: $500M+ annually in reduced software costs and administrative time.</p>
+            </div>
+        </div>
+
+        <!-- Pitch Deck Outline -->
+        <div id="pitch-deck" class="page-break">
+            <h1>21. Investor Pitch Deck Outline</h1>
+            
+            <h2>Slide-by-Slide Structure (12–15 slides)</h2>
+            
+            <h3>Slide 1: Title / Cover</h3>
+            <ul>
+                <li>Daily One Accord logo</li>
+                <li>Tagline: "The Unified Church Operating System"</li>
+                <li>"That they may be one, even as We are one." — John 17:21</li>
+                <li>Contact: Wes Shinn, Founder & CEO</li>
+            </ul>
+
+            <h3>Slide 2: The Problem</h3>
+            <ul>
+                <li>Churches juggle 5–10 disconnected tools</li>
+                <li>Wastes 15-20 hours/week on admin tasks</li>
+                <li>Costs $5K–$20K/year in fragmented subscriptions</li>
+                <li>Poor data integration leads to lost visitors</li>
+                <li><strong>Hidden Cost: FREE Slack costs churches $840-$26K/year</strong></li>
+            </ul>
+            <p><strong>Visual:</strong> Icons of scattered apps with frustrated church staff</p>
+
+            <h3>Slide 3: The Solution</h3>
+            <ul>
+                <li>Daily One Accord: All-in-one platform for church operations</li>
+                <li>Unified system for communication, collaboration, attendance, giving</li>
+                <li>Native Slack integration for real-time teamwork</li>
+                <li><strong>FREE Slack for Churches</strong> (nonprofit discount)</li>
+                <li>Modern tech stack (Next.js 15 + Supabase)</li>
+            </ul>
+            <p><strong>Visual:</strong> Clean dashboard screenshot</p>
+
+            <h3>Slide 4: Market Opportunity</h3>
+            <ul>
+                <li>350,000+ churches in the US</li>
+                <li>$2–3B annual spend on church software</li>
+                <li>70% are small/mid-sized (50–500 attendees)</li>
+                <li>Church tech spending growing 12% annually</li>
+            </ul>
+            <p><strong>Visual:</strong> Market size infographic, TAM/SAM/SOM breakdown</p>
+
+            <h3>Slide 5: Business Model</h3>
+            <ul>
+                <li>Subscription SaaS: $24–$199/month (flat rate, unlimited Slack seats)</li>
+                <li>Transaction fees: 2.2%–3.9% on giving</li>
+                <li>One-time setup fee: $199</li>
+                <li>Annual Maintenance Fee: $99 (starting Year 2)</li>
+                <li><strong>Average church LTV: $5,892 (Year 1) + FREE Slack value</strong></li>
+            </ul>
+            <p><strong>Visual:</strong> Pricing table with three tiers</p>
+
+            <h3>Slide 6: Traction & Validation</h3>
+            <ul>
+                <li>5 beta churches launching (Virginia, North Carolina)</li>
+                <li>70% faster service planning in internal tests</li>
+                <li>Strong pipeline of interested churches</li>
+                <li>Testimonials from beta users</li>
+            </ul>
+            <p><strong>Visual:</strong> Growth chart showing trajectory</p>
+
+            <h3>Slide 7: Competitive Advantage</h3>
+            <ul>
+                <li><strong>vs. Planning Center:</strong> Same features, 37% lower cost ($10K+/year savings for large churches) + FREE Slack</li>
+                <li><strong>vs. CCB:</strong> Modern UX, 9% lower cost, better integrations + FREE Slack</li>
+                <li><strong>vs. Breeze:</strong> Full-featured, scalable, enterprise-ready + FREE Slack</li>
+                <li><strong>Unique:</strong> Only platform with Slack + Google Drive + SMS native integration</li>
+            </ul>
+            <p><strong>Visual:</strong> Competitive matrix showing cost savings AND feature advantages</p>
+            
+            <div class="success-box">
+                <p><strong>Key Stat:</strong> "Churches save an average of $5,793-$45,731 annually by switching to Daily One Accord (Year 2+), plus get FREE Slack."</p>
+            </div>
+
+            <h3>Slide 8: Go-to-Market Strategy</h3>
+            <ul>
+                <li><strong>Phase 1 (0–3 mo):</strong> 20 churches, $5K–$7K</li>
+                <li><strong>Phase 2 (3–6 mo):</strong> 100 churches, $8K–$12K</li>
+                <li><strong>Phase 3 (6–12 mo):</strong> 500+, $20K–$30K</li>
+                <li>Multi-channel: Facebook ads, referrals, partnerships</li>
+            </ul>
+            <p><strong>Visual:</strong> Timeline with milestones</p>
+
+            <h3>Slide 9: Financial Projections</h3>
+            <ul>
+                <li>Year 1: 200 churches, $159K ARR</li>
+                <li>Year 2: 600 churches, $520K ARR (incl. maintenance fees)</li>
+                <li>Year 3: 1,200 churches, $1.1M ARR (incl. maintenance fees)</li>
+                <li>Profit Margins: 95%+</li>
+            </ul>
+            <p><strong>Visual:</strong> Revenue growth chart</p>
+
+            <h3>Slide 10: Use of Funds</h3>
+            <ul>
+                <li>30% Product Development (features, AI, UX)</li>
+                <li>25% Marketing & CAC (ads, referrals, partnerships)</li>
+                <li>25% Infrastructure (hosting, SMS, scaling)</li>
+                <li>15% Operations & Support (onboarding, CS team)</li>
+                <li>5% Legal & Compliance</li>
+            </ul>
+            <p><strong>Visual:</strong> Pie chart with allocation</p>
+
+            <h3>Slide 11: Team</h3>
+            <ul>
+                <li><strong>Wes Shinn, CEO:</strong> 20+ years creative/tech/ministry leadership</li>
+                <li><strong>Keiko Shinn, Co-Founder:</strong> Founder of Streams platform</li>
+                <li><strong>Planned hires:</strong> Developer, CSM, Partnerships Coordinator</li>
+            </ul>
+            <p><strong>Visual:</strong> Headshots with brief bios</p>
+
+            <h3>Slide 12: Product Roadmap</h3>
+            <ul>
+                <li><strong>Q2 2025:</strong> Mobile app, AI analytics, workflow automation</li>
+                <li><strong>Q3 2025:</strong> Multi-site management, API platform</li>
+                <li><strong>Q4 2025:</strong> Integration marketplace, advanced giving</li>
+                <li><strong>2026:</strong> International expansion, multi-language</li>
+            </ul>
+            <p><strong>Visual:</strong> Timeline roadmap</p>
+
+            <h3>Slide 13: Impact & Mission</h3>
+            <ul>
+                <li>Mission: Unify the Body of Christ through Kingdom-centered technology</li>
+                <li>Impact: Free up 15-20 hours/week per church</li>
+                <li>Vision: 10,000 churches unified by 2030</li>
+                <li>"That they may be one, even as We are one." — John 17:21</li>
+            </ul>
+            <p><strong>Visual:</strong> Photos of churches, ministers, community</p>
+
+            <h3>Slide 14: The Ask</h3>
+            <ul>
+                <li>Raising: $[Amount] (Seed/Pre-Seed round)</li>
+                <li>Use: Marketing, product development, team expansion</li>
+                <li>Target: Reach [X churches] and $[Y ARR] in 12 months</li>
+                <li>Return potential: Mission-driven + strong unit economics</li>
+            </ul>
+            <p><strong>Visual:</strong> Bold, clear ask with funding timeline</p>
+
+            <h3>Slide 15: Contact & Thank You</h3>
+            <ul>
+                <li>Wes Shinn, Founder & CEO</li>
+                <li>Email: wes@dailyoneaccord.com</li>
+                <li>Website: dailyoneaccord.com</li>
+                <li>Call to Action: "Let's partner to unify the Church through technology."</li>
+            </ul>
+            <div class="highlight-box">
+                <h3>Pitch Deck Design Guidelines</h3>
+                <ul>
+                    <li><strong>Clean & Modern:</strong> Reflect the product's UX quality</li>
+                    <li><strong>Minimal Text:</strong> Max 3–5 bullet points per slide</li>
+                    <li><strong>High-Quality Visuals:</strong> Screenshots, mockups, photos</li>
+                    <li><strong>Consistent Branding:</strong> Use brand colors, fonts, logo placement</li>
+                    <li><strong>Data-Driven:</strong> Charts, graphs, and metrics where possible</li>
+                </ul>
+                <p><strong>Recommended Tools:</strong> Pitch (pitch.com), Canva Pro, Google Slides, Keynote</p>
+            </div>
+        </div>
+
+        <!-- Added Security and Compliance Appendix -->
+        <!-- Appendix: Security and Compliance Documentation -->
+        <div id="security-appendix" class="page-break">
+            <h1>Appendix: Security and Compliance Documentation</h1>
+            
+            <h2>Security Architecture</h2>
+            <p>Daily One Accord implements enterprise-grade security measures that exceed industry standards for church management software.</p>
+            
+            <h3>Infrastructure Security</h3>
+            <ul>
+                <li><strong>Hosting:</strong> Vercel's global edge network with automatic DDoS protection</li>
+                <li><strong>Database:</strong> Supabase (enterprise PostgreSQL) with automatic backups</li>
+                <li><strong>SSL/TLS:</strong> All connections encrypted with modern cipher suites</li>
+                <li><strong>Uptime:</strong> 99.9% SLA with multi-region redundancy</li>
+            </ul>
+            
+            <h3>Application Security</h3>
+            <ul>
+                <li><strong>Row Level Security (RLS):</strong> Database-level access control on every query</li>
+                <li><strong>Authentication:</strong> Supabase Auth with OAuth 2.0 and JWT tokens</li>
+                <li><strong>Password Hashing:</strong> Bcrypt with salt (industry standard)</li>
+                <li><strong>Session Management:</strong> Secure, expiring tokens with automatic refresh</li>
+                <li><strong>CSRF Protection:</strong> Built-in cross-site request forgery prevention</li>
+                <li><strong>XSS Prevention:</strong> Input sanitization and output encoding</li>
+            </ul>
+            
+            <h3>Data Protection</h3>
+            <ul>
+                <li><strong>Encryption at Rest:</strong> AES-256 encryption for all stored data</li>
+                <li><strong>Encryption in Transit:</strong> TLS 1.3 for all network communication</li>
+                <li><strong>Backup Encryption:</strong> All backups encrypted with separate keys</li>
+                <li><strong>Key Management:</strong> Secure key rotation and storage</li>
+            </ul>
+            
+            <h3>Access Controls</h3>
+            <ul>
+                <li><strong>Role-Based Access Control (RBAC):</strong> Five permission levels</li>
+                <li><strong>Granular Permissions:</strong> Control view, edit, delete at feature level</li>
+                <li><strong>Audit Logging:</strong> All data access and changes logged</li>
+                <li><strong>IP Whitelisting:</strong> Available on Enterprise tier</li>
+                <li><strong>Multi-Factor Authentication:</strong> Planned for Q2 2025</li>
+            </ul>
+            
+            <h3>Compliance</h3>
+            <ul>
+                <li><strong>GDPR:</strong> Full compliance with European data protection regulations</li>
+                <li><strong>CCPA:</strong> California Consumer Privacy Act compliance</li>
+                <li><strong>COPPA:</strong> Children's Online Privacy Protection Act considerations</li>
+                <li><strong>SOC 2:</strong> Planned certification for 2025</li>
+            </ul>
+            
+            <h3>Monitoring and Incident Response</h3>
+            <ul>
+                <li><strong>Real-Time Monitoring:</strong> Sentry integration for error tracking</li>
+                <li><strong>Security Alerts:</strong> Automated alerts for suspicious activity</li>
+                <li><strong>Incident Response Plan:</strong> Documented procedures for security events</li>
+                <li><strong>Penetration Testing:</strong> Annual third-party security audits</li>
+            </ul>
+            
+            <h3>Data Ownership and Portability</h3>
+            <ul>
+                <li><strong>Church Owns Data:</strong> Clear contractual ownership</li>
+                <li><strong>Export Capabilities:</strong> Download all data in CSV, JSON, or SQL formats</li>
+                <li><strong>Data Deletion:</strong> Complete data removal upon request</li>
+                <li><strong>No Data Mining:</strong> We never sell or share church data</li>
+            </ul>
+            
+            <div class="success-box">
+                <h3>Security Commitment</h3>
+                <p>We treat church data with the same level of security as financial institutions. Our security practices are transparent, regularly audited, and continuously improved. Churches can trust that their sensitive member information is protected with enterprise-grade security measures.</p>
+            </div>
+        </div>
+        <!-- </CHANGE> -->
+
+    </div>
+
+    <script>
+        // Add smooth scrolling for TOC links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
