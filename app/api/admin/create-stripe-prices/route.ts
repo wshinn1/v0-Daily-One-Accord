@@ -1,11 +1,15 @@
 import { type NextRequest, NextResponse } from "next/server"
 import Stripe from "stripe"
 
+function getStripeClient() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: "2024-11-20.acacia",
+  })
+}
+
 export async function POST(request: NextRequest) {
   try {
-    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-      apiVersion: "2024-11-20.acacia",
-    })
+    const stripe = getStripeClient()
 
     const products = await stripe.products.list({ limit: 100 })
     let growthProduct = products.data.find((p) => p.name === "Growth Plan")

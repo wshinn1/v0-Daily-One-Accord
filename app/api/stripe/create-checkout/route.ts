@@ -3,11 +3,14 @@ import Stripe from "stripe"
 import { STRIPE_PRICE_IDS } from "@/lib/stripe/config"
 import { asyncHandler, ValidationError, ExternalAPIError } from "@/lib/errors/handler"
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2024-12-18.acacia",
-})
+function getStripeClient() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: "2024-12-18.acacia",
+  })
+}
 
 export const POST = asyncHandler(async (request: NextRequest) => {
+  const stripe = getStripeClient()
   const { planType, setupFeeTier = "standard", email, churchName } = await request.json()
 
   console.log("[v0] Creating checkout session:", { planType, setupFeeTier, email })

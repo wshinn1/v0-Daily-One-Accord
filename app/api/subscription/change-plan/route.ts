@@ -3,12 +3,15 @@ import Stripe from "stripe"
 import { getSupabaseServerClient } from "@/lib/supabase/server"
 import { STRIPE_PRICE_IDS, type PlanType } from "@/lib/stripe/config"
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2024-12-18.acacia",
-})
+function getStripeClient() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: "2024-12-18.acacia",
+  })
+}
 
 export async function POST(request: NextRequest) {
   try {
+    const stripe = getStripeClient()
     const { tenantId, newPlan } = await request.json()
 
     if (!tenantId || !newPlan) {

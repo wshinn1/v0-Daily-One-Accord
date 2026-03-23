@@ -4,11 +4,15 @@ import Stripe from "stripe"
 import { STRIPE_PRICE_IDS, PLAN_DETAILS } from "@/lib/stripe/config"
 import { withRateLimit, rateLimiters } from "@/lib/rate-limit"
 
-const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
+function getSupabaseAdmin() {
+  return createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
+}
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2024-12-18.acacia",
-})
+function getStripeClient() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: "2024-12-18.acacia",
+  })
+}
 
 export async function POST(request: NextRequest) {
   const rateLimitResult = await withRateLimit(request, rateLimiters.signup)
@@ -31,6 +35,9 @@ export async function POST(request: NextRequest) {
     } = await request.json()
 
     console.log("[v0] Creating tenant for:", { email, church, plan, additionalSeats, includeSocialMedia })
+
+    const stripe = getStripeClient()
+    const supabase = getSupabaseAdmin()
 
     const planDetails = PLAN_DETAILS[plan as keyof typeof PLAN_DETAILS]
     const totalSeats = planDetails.includedSeats + additionalSeats

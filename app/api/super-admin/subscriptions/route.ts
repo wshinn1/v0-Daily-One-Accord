@@ -4,9 +4,11 @@ import { asyncHandler, UnauthorizedError } from "@/lib/errors/handler"
 import Stripe from "stripe"
 import { ADDON_DETAILS } from "@/lib/stripe/config"
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2024-12-18.acacia",
-})
+function getStripeClient() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: "2024-12-18.acacia",
+  })
+}
 
 export const GET = asyncHandler(async () => {
   const supabase = await createClient()

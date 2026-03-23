@@ -3,13 +3,15 @@ import Stripe from "stripe"
 import { createClient } from "@/lib/supabase/server"
 import { asyncHandler, ValidationError, DatabaseError } from "@/lib/errors/handler"
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2024-12-18.acacia",
-})
-
-const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET!
+function getStripeClient() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: "2024-12-18.acacia",
+  })
+}
 
 export const POST = asyncHandler(async (request: NextRequest) => {
+  const stripe = getStripeClient()
+  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET!
   const body = await request.text()
   const signature = request.headers.get("stripe-signature")!
 
