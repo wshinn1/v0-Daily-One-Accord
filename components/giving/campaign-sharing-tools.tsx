@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label"
 import { useToast } from "@/hooks/use-toast"
 import { Share2, Copy, Mail, Facebook, Twitter, MessageCircle, QrCode } from "lucide-react"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import QRCode from "qrcode.react"
+import { QRCodeCanvas } from "qrcode.react"
 
 interface CampaignSharingToolsProps {
   campaignId: string
@@ -158,7 +158,7 @@ export function CampaignSharingTools({ campaignId, campaignName, churchSlug }: C
           </DialogHeader>
           <div className="flex flex-col items-center gap-4 py-4">
             <div className="bg-white p-4 rounded-lg">
-              <QRCode id="qr-code-canvas" value={campaignUrl} size={256} level="H" includeMargin />
+              <QRCodeCanvas id="qr-code-canvas" value={campaignUrl} size={256} level="H" includeMargin />
             </div>
             <Button onClick={downloadQRCode} className="w-full">
               Download QR Code

@@ -2,9 +2,11 @@ import { type NextRequest, NextResponse } from "next/server"
 import { createClient } from "@/lib/supabase/server"
 import Stripe from "stripe"
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2024-12-18.acacia",
-})
+function getStripeClient() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: "2024-12-18.acacia",
+  })
+}
 
 const rateLimitMap = new Map<string, { count: number; resetTime: number }>()
 const RATE_LIMIT = 5 // requests
@@ -119,6 +121,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create Stripe Checkout Session
+    const stripe = getStripeClient()
     const session = await stripe.checkout.sessions.create(
       {
         mode: isRecurring ? "subscription" : "payment",
