@@ -4,8 +4,7 @@ import { sendEmail } from "@/lib/email"
 
 // Scheduled SMS with automatic retries
 export const sendScheduledSMS = inngest.createFunction(
-  { id: "send-scheduled-sms", retries: 3 },
-  { event: "sms/scheduled" },
+  { id: "send-scheduled-sms", retries: 3, trigger: { event: "sms/scheduled" } },
   async ({ event, step }) => {
     const { recipients, message, tenantId } = event.data
 
@@ -25,8 +24,7 @@ export const sendScheduledSMS = inngest.createFunction(
 
 // Newsletter campaign with batching
 export const sendNewsletterCampaign = inngest.createFunction(
-  { id: "send-newsletter-campaign", retries: 3 },
-  { event: "newsletter/send" },
+  { id: "send-newsletter-campaign", retries: 3, trigger: { event: "newsletter/send" } },
   async ({ event, step }) => {
     const { recipients, subject, content, tenantId } = event.data
 
@@ -66,8 +64,7 @@ export const sendNewsletterCampaign = inngest.createFunction(
 
 // Automated reminder emails
 export const sendEventReminder = inngest.createFunction(
-  { id: "send-event-reminder" },
-  { cron: "0 9 * * *" }, // Run daily at 9 AM
+  { id: "send-event-reminder", trigger: { cron: "0 9 * * *" } }, // Run daily at 9 AM
   async ({ step }) => {
     // Step 1: Find events happening tomorrow
     const upcomingEvents = await step.run("find-upcoming-events", async () => {
@@ -85,8 +82,7 @@ export const sendEventReminder = inngest.createFunction(
 
 // Visitor automation execution function
 export const executeVisitorAutomation = inngest.createFunction(
-  { id: "execute-visitor-automation", retries: 2 },
-  { event: "visitor/automation.trigger" },
+  { id: "execute-visitor-automation", retries: 2, trigger: { event: "visitor/automation.trigger" } },
   async ({ event, step }) => {
     const { visitorId, automationId, tenantId, triggerType } = event.data
 
@@ -175,8 +171,7 @@ export const executeVisitorAutomation = inngest.createFunction(
 
 // Recurring cards generation function
 export const generateRecurringCards = inngest.createFunction(
-  { id: "generate-recurring-cards" },
-  { cron: "0 * * * *" }, // Run every hour
+  { id: "generate-recurring-cards", trigger: { cron: "0 * * * *" } }, // Run every hour
   async ({ step }) => {
     console.log("[v0] Checking for recurring cards to generate")
 
