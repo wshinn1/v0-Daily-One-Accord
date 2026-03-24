@@ -1,15 +1,35 @@
 import { createServerClient } from "@supabase/ssr"
 import { NextResponse, type NextRequest } from "next/server"
 
+// Get the root domain for cookie sharing across subdomains
+function getCookieDomain(hostname: string): string | undefined {
+  // Don't set domain for localhost or Vercel preview URLs
+  if (hostname.includes("localhost") || hostname.includes("vercel.app") || hostname.includes("v0.dev")) {
+    return undefined
+  }
+  
+  // Extract root domain (e.g., "tektonstable.com" from "savefeedrestore.tektonstable.com")
+  const parts = hostname.split(".")
+  if (parts.length >= 2) {
+    // Return the root domain with leading dot for subdomain sharing
+    return `.${parts.slice(-2).join(".")}`
+  }
+  
+  return undefined
+}
+
 /**
  * Middleware helper for Supabase authentication
  * Handles session refresh and cookie management
- * Optimized for multi-tenant architecture
+ * Optimized for multi-tenant architecture with cross-subdomain cookie support
  */
 export async function updateSession(request: NextRequest) {
   let supabaseResponse = NextResponse.next({
     request,
   })
+
+  const hostname = request.headers.get("host") || ""
+  const cookieDomain = getCookieDomain(hostname)
 
   // Create Supabase client for this request
   // Important: Don't put this in a global variable for Fluid compute
@@ -26,7 +46,14 @@ export async function updateSession(request: NextRequest) {
           supabaseResponse = NextResponse.next({
             request,
           })
-          cookiesToSet.forEach(({ name, value, options }) => supabaseResponse.cookies.set(name, value, options))
+          cookiesToSet.forEach(({ name, value, options }) => {
+            // Set cookies with domain for cross-subdomain sharing
+            const cookieOptions = {
+              ...options,
+              ...(cookieDomain && { domain: cookieDomain }),
+            }
+            supabaseResponse.cookies.set(name, value, cookieOptions)
+          })
         },
       },
     },
